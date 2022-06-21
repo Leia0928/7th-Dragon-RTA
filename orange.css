@@ -1,0 +1,119 @@
+
+/* コメントの文字色 */
+atom-text-editor .syntax--comment {
+    color: orange;
+    font-family: "Meiryo";
+
+}
+
+.markdown-preview {
+  color: #ffffff;
+  font-family: "SHG30";
+  font-size: 20px;
+
+}
+
+/* コメント記号の色 */
+.syntax--punctuation.syntax--definition.syntax--comment {
+    color: limegreen;
+}
+
+
+body {
+  background-color: #696969;
+  color: #ffffff;
+  font-size: small;
+  font-weight: normal;
+}　
+
+h1 {
+	color: #;
+	position: relative;
+	font-weight: bold;
+	margin: 0 0 1.5em;
+	padding: 1.0em /*上*/ 0.5em/*右*/ 0em/*下*/ 1.5em/*左*/;
+	border-bottom: 0px solid #ffffff;
+}
+
+h1:before {
+	content: "□";
+	font-size: 150%;
+	position: absolute;
+	color: #ea5219;
+	top: 0.3em;
+	left: 0.1em;
+	height: 12px;
+	width: 12px;
+}
+h1:after {
+	content: "□";
+	font-size: 100%;
+	position: absolute;
+	color: #1aab77;
+	top: 1.1em;
+	left: 0;
+	height: 12px;
+	width: 12px;
+}
+
+h2 {
+	color: #ffffff;
+	position: relative;
+	font-weight: bold;
+	margin: 0 0 1.5em;
+	padding: 0.5em /*上*/ 0.5em/*右*/ 0.5em/*下*/ 0.5em/*左*/;
+	border-bottom: 2px solid #ff9328;
+}
+
+h3 {
+	color: #ffffff;
+	position: relative;
+	font-weight: bold;
+	margin: 0 0 1.5em;
+	padding: 0.5em /*上*/ 0.5em/*右*/ 0.5em/*下*/ 0em/*左*/;
+	border-top: 2px solid #ff9328;
+}
+
+h4 {
+
+}
+
+p{
+  color: #ffffff;
+
+}
+
+
+strong{
+  font-size: large;
+  font-weight: bolder;
+}
+
+.ao{
+  background-color: rgba(0,120,255,0.7);
+}
+
+.aka{
+  background-color: rgba(255,30,30,0.7)
+}
+
+.ora{
+  background-color: rgba(250,125,0,0.7)
+}
+
+blockquote{
+  position:relative;
+  border-left:3px double #997bad;
+  padding-left:10px;
+  background: rgba(150,30,100,0.5) ;
+  color: #ffffff
+}
+
+code {
+  display: inline-block;
+  padding: 0.1em 0.25em; /* 文字周りの余白 */
+  color: #444; /* 文字色 */
+  background-color: #e7edf3; /* 背景色 */
+  border-radius: 3px; /* 角丸 */
+  border: solid 1px #d6dde4; /* 枠線 */
+}
