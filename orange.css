@@ -21,7 +21,7 @@ atom-text-editor .syntax--comment {
 
 body {
   background-color: #696969;
-  color: #ffffff;
+  color: #000000;
   font-size: small;
   font-weight: normal;
 }　
@@ -79,7 +79,7 @@ h4 {
 }
 
 p{
-  color: #ffffff;
+  color: #000000;
 
 }
 
@@ -106,7 +106,7 @@ blockquote{
   border-left:3px double #997bad;
   padding-left:10px;
   background: rgba(150,30,100,0.5) ;
-  color: #ffffff
+  color: #000000
 }
 
 code {
