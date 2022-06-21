@@ -1,883 +1,1022 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link rel="stylesheet" href="https://leia0928.github.io/7th-Dragon-RTA/orange.css" />
-</head>
-<body>
-# KPPP帝竜
+      <!DOCTYPE html>
+      <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>20220531現在 KPPP帝竜チャート</title>
+            <link rel="stylesheet" href="https://Leia0928.github.io/7th-Dragon-RTA/orange.css" />
+            <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); overflow: auto; }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(75, 83, 98); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); border-image: initial; background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; overflow-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); overflow: scroll; }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { background-color: rgb(255, 255, 255); border-top: 1px solid rgb(204, 204, 204); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border-radius: 3px; }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { overflow-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; overflow-wrap: normal; background-color: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; background-color: rgb(252, 252, 252); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-image: initial; border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.markdown-preview pre.editor-colors { user-select: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item input[type="checkbox"] { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.markdown-preview .task-list-item { list-style-type: none; }
+.markdown-preview code { text-shadow: none; }
+.markdown-preview { color: rgb(255, 255, 255); font-family: SHG30; font-size: 20px; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher.bracket-matcher {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .find-result .region.region.region,
+pre.editor-colors .current-result .region.region.region {
+  border-radius: 2px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+pre.editor-colors .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+pre.editor-colors .current-result .region.region.region {
+  border: 2px solid #528bff;
+  transition-duration: .1s;
+}
+pre.editor-colors .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #abb2bf;
+}
+.syntax--comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #5c6370;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #e5c07b;
+}
+.syntax--keyword {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--control {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #61afef;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #d19a66;
+}
+.syntax--storage {
+  color: #c678dd;
+}
+.syntax--storage.syntax--type.syntax--annotation,
+.syntax--storage.syntax--type.syntax--primitive {
+  color: #c678dd;
+}
+.syntax--storage.syntax--modifier.syntax--package,
+.syntax--storage.syntax--modifier.syntax--import {
+  color: #abb2bf;
+}
+.syntax--constant {
+  color: #d19a66;
+}
+.syntax--constant.syntax--variable {
+  color: #d19a66;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--numeric {
+  color: #d19a66;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #56b6c2;
+}
+.syntax--variable {
+  color: #e06c75;
+}
+.syntax--variable.syntax--interpolation {
+  color: #be5046;
+}
+.syntax--variable.syntax--parameter {
+  color: #abb2bf;
+}
+.syntax--string {
+  color: #98c379;
+}
+.syntax--string > .syntax--source,
+.syntax--string .syntax--embedded {
+  color: #abb2bf;
+}
+.syntax--string.syntax--regexp {
+  color: #56b6c2;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #e5c07b;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #e06c75;
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #5c6370;
+}
+.syntax--punctuation.syntax--definition.syntax--method-parameters,
+.syntax--punctuation.syntax--definition.syntax--function-parameters,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--separator,
+.syntax--punctuation.syntax--definition.syntax--seperator,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #abb2bf;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #61afef;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #be5046;
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: #abb2bf;
+}
+.syntax--support.syntax--class {
+  color: #e5c07b;
+}
+.syntax--support.syntax--type {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #e06c75;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #d19a66;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #61afef;
+}
+.syntax--meta.syntax--class {
+  color: #e5c07b;
+}
+.syntax--meta.syntax--class.syntax--body {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--definition.syntax--variable {
+  color: #e06c75;
+}
+.syntax--meta.syntax--link {
+  color: #d19a66;
+}
+.syntax--meta.syntax--require {
+  color: #61afef;
+}
+.syntax--meta.syntax--selector {
+  color: #c678dd;
+}
+.syntax--meta.syntax--separator {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--tag {
+  color: #abb2bf;
+}
+.syntax--underline {
+  text-decoration: underline;
+}
+.syntax--none {
+  color: #abb2bf;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.syntax--invalid.syntax--illegal {
+  color: white !important;
+  background-color: #e05252 !important;
+}
+.syntax--markup.syntax--bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #c678dd;
+}
+.syntax--markup.syntax--deleted {
+  color: #e06c75;
+}
+.syntax--markup.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #e06c75;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #61afef;
+}
+.syntax--markup.syntax--link {
+  color: #56b6c2;
+}
+.syntax--markup.syntax--inserted {
+  color: #98c379;
+}
+.syntax--markup.syntax--quote {
+  color: #d19a66;
+}
+.syntax--markup.syntax--raw {
+  color: #98c379;
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--css .syntax--property-name,
+.syntax--source.syntax--css .syntax--property-value {
+  color: #828997;
+}
+.syntax--source.syntax--css .syntax--property-name.syntax--support,
+.syntax--source.syntax--css .syntax--property-value.syntax--support {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--source.syntax--embedded.syntax--source {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--constant.syntax--language,
+.syntax--source.syntax--elixir .syntax--constant.syntax--numeric,
+.syntax--source.syntax--elixir .syntax--constant.syntax--definition {
+  color: #61afef;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--definition,
+.syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
+  color: #c678dd;
+}
+.syntax--source.syntax--elixir .syntax--parameter.syntax--variable.syntax--function {
+  color: #d19a66;
+  font-style: italic;
+}
+.syntax--source.syntax--elixir .syntax--quoted {
+  color: #98c379;
+}
+.syntax--source.syntax--elixir .syntax--keyword.syntax--special-method,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--section,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--source.syntax--empty {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--readwrite.syntax--module .syntax--punctuation {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--regexp.syntax--section,
+.syntax--source.syntax--elixir .syntax--regexp.syntax--string {
+  color: #be5046;
+}
+.syntax--source.syntax--elixir .syntax--separator,
+.syntax--source.syntax--elixir .syntax--keyword.syntax--operator {
+  color: #d19a66;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--constant {
+  color: #e5c07b;
+}
+.syntax--source.syntax--elixir .syntax--array,
+.syntax--source.syntax--elixir .syntax--scope,
+.syntax--source.syntax--elixir .syntax--section {
+  color: #828997;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: #61afef;
+}
+.syntax--source.syntax--ini .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
+  color: #e06c75;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--keyword.syntax--operator.syntax--instanceof {
+  color: #c678dd;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
+  color: #e06c75;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair > .syntax--punctuation {
+  color: #abb2bf;
+}
+.syntax--source.syntax--ts .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--flow .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: #98c379;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: #56b6c2;
+}
+.syntax--ng.syntax--interpolation {
+  color: #e06c75;
+}
+.syntax--ng.syntax--interpolation.syntax--begin,
+.syntax--ng.syntax--interpolation.syntax--end {
+  color: #61afef;
+}
+.syntax--ng.syntax--interpolation .syntax--function {
+  color: #e06c75;
+}
+.syntax--ng.syntax--interpolation .syntax--function.syntax--begin,
+.syntax--ng.syntax--interpolation .syntax--function.syntax--end {
+  color: #61afef;
+}
+.syntax--ng.syntax--interpolation .syntax--bool {
+  color: #d19a66;
+}
+.syntax--ng.syntax--interpolation .syntax--bracket {
+  color: #abb2bf;
+}
+.syntax--ng.syntax--pipe,
+.syntax--ng.syntax--operator {
+  color: #abb2bf;
+}
+.syntax--ng.syntax--tag {
+  color: #56b6c2;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--attribute-name {
+  color: #e5c07b;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string {
+  color: #c678dd;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--begin,
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--end {
+  color: #abb2bf;
+}
+.syntax--source.syntax--php .syntax--class.syntax--bracket {
+  color: #abb2bf;
+}
+/*
+   This defines styling rules for syntax classes.
+
+   See the naming conventions for a list of syntax classes:
+   https://flight-manual.atom.io/hacking-atom/sections/syntax-naming-conventions
+
+   When styling rules conflict:
+   - The last rule overrides previous rules.
+   - The rule with most classes and pseudo-classes overrides the last rule.
+*/
+.syntax--keyword {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--type {
+  color: #56b6c2;
+}
+.syntax--keyword.syntax--function {
+  color: #e06c75;
+}
+.syntax--keyword.syntax--variable {
+  color: #e06c75;
+}
+.syntax--entity {
+  color: #abb2bf;
+}
+.syntax--entity.syntax--parameter {
+  color: #abb2bf;
+}
+.syntax--entity.syntax--support {
+  color: #e06c75;
+}
+.syntax--entity.syntax--decorator:last-child {
+  color: #61afef;
+}
+.syntax--entity.syntax--label {
+  text-decoration: underline;
+}
+.syntax--entity.syntax--function {
+  color: #61afef;
+}
+.syntax--entity.syntax--operator {
+  color: #61afef;
+}
+.syntax--entity.syntax--operator.syntax--symbolic {
+  color: #abb2bf;
+}
+.syntax--entity.syntax--type {
+  color: #56b6c2;
+}
+.syntax--entity.syntax--tag {
+  color: #e06c75;
+}
+.syntax--entity.syntax--attribute {
+  color: #d19a66;
+}
+.syntax--punctuation {
+  color: #abb2bf;
+}
+.syntax--punctuation.syntax--accessor {
+  color: #abb2bf;
+}
+.syntax--punctuation.syntax--accessor.syntax--member,
+.syntax--punctuation.syntax--accessor.syntax--scope {
+  color: #c678dd;
+}
+.syntax--punctuation.syntax--embedded {
+  color: #c678dd;
+}
+.syntax--string {
+  color: #98c379;
+}
+.syntax--string.syntax--immutable {
+  color: #98c379;
+}
+.syntax--string.syntax--part {
+  color: #56b6c2;
+}
+.syntax--string.syntax--interpolation {
+  color: #c678dd;
+}
+.syntax--string.syntax--regexp {
+  color: #98c379;
+}
+.syntax--string.syntax--regexp.syntax--language {
+  color: #c678dd;
+}
+.syntax--string.syntax--regexp.syntax--variable {
+  color: #61afef;
+}
+.syntax--string.syntax--regexp.syntax--punctuation {
+  color: #c678dd;
+}
+.syntax--constant {
+  color: #d19a66;
+}
+.syntax--constant.syntax--character {
+  color: #98c379;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #98c379;
+}
+.syntax--constant.syntax--character.syntax--code {
+  color: #56b6c2;
+}
+.syntax--text {
+  color: #abb2bf;
+}
+.syntax--markup.syntax--heading {
+  color: #e06c75;
+}
+.syntax--markup.syntax--list.syntax--punctuation {
+  color: #e06c75;
+}
+.syntax--markup.syntax--quote {
+  color: #5c6370;
+  font-style: italic;
+}
+.syntax--markup.syntax--bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.syntax--markup.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--markup.syntax--underline {
+  color: #56b6c2;
+  text-decoration: underline;
+}
+.syntax--markup.syntax--strike {
+  color: #e06c75;
+}
+.syntax--markup.syntax--raw {
+  color: #98c379;
+}
+.syntax--markup.syntax--link {
+  color: #56b6c2;
+}
+.syntax--markup.syntax--alt {
+  color: #61afef;
+}
+.syntax--markup.syntax--inserted {
+  color: #98c379;
+}
+.syntax--markup.syntax--inserted .syntax--punctuation {
+  color: #98c379;
+}
+.syntax--markup.syntax--highlighted {
+  color: #98c379;
+}
+.syntax--markup.syntax--highlighted .syntax--punctuation {
+  color: #98c379;
+}
+.syntax--markup.syntax--deleted {
+  color: #e06c75;
+}
+.syntax--markup.syntax--deleted .syntax--punctuation {
+  color: #e06c75;
+}
+.syntax--markup.syntax--changed {
+  color: #c678dd;
+}
+.syntax--markup.syntax--changed .syntax--punctuation {
+  color: #c678dd;
+}
+.syntax--markup.syntax--commented {
+  color: #5c6370;
+}
+.syntax--markup.syntax--commented .syntax--punctuation {
+  color: #5c6370;
+}
+.syntax--comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.syntax--comment.syntax--caption {
+  color: #6a7181;
+  font-weight: bold;
+}
+.syntax--comment.syntax--term {
+  color: #707989;
+}
+.syntax--comment.syntax--punctuation {
+  color: #5c6370;
+  font-weight: normal;
+}
+.syntax--invalid:not(.syntax--punctuation).syntax--illegal {
+  color: white !important;
+  background-color: #e05252 !important;
+}
+.syntax--invalid:not(.syntax--punctuation).syntax--deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.syntax--source.syntax--css .syntax--entity.syntax--function {
+  color: #828997;
+}
+.syntax--source.syntax--css .syntax--entity.syntax--function.syntax--support {
+  color: #56b6c2;
+}
+.syntax--source.syntax--css .syntax--entity.syntax--selector {
+  color: #d19a66;
+}
+.syntax--source.syntax--css .syntax--entity.syntax--selector.syntax--tag {
+  color: #e06c75;
+}
+.syntax--source.syntax--css .syntax--entity.syntax--selector.syntax--id {
+  color: #61afef;
+}
+.syntax--source.syntax--css .syntax--entity.syntax--property {
+  color: #828997;
+}
+.syntax--source.syntax--css .syntax--entity.syntax--property.syntax--support {
+  color: #abb2bf;
+}
+.syntax--source.syntax--css .syntax--entity.syntax--variable {
+  color: #e06c75;
+}
+.syntax--source.syntax--css .syntax--constant {
+  color: #828997;
+}
+.syntax--source.syntax--css .syntax--constant.syntax--support {
+  color: #abb2bf;
+}
+.syntax--source.syntax--css .syntax--constant.syntax--numeric {
+  color: #d19a66;
+}
+.syntax--source.syntax--css .syntax--constant.syntax--media {
+  color: #d19a66;
+}
+.syntax--source.syntax--css .syntax--constant.syntax--color {
+  color: #d19a66;
+}
+.syntax--source.syntax--css .syntax--constant.syntax--offset {
+  color: #abb2bf;
+}
+.syntax--source.syntax--css .syntax--constant.syntax--attribute-value {
+  color: #98c379;
+}
+.syntax--source.syntax--css .syntax--punctuation.syntax--selector {
+  color: #d19a66;
+}
+.syntax--source.syntax--css .syntax--punctuation.syntax--selector.syntax--wildcard {
+  color: #e06c75;
+}
+.syntax--source.syntax--css .syntax--punctuation.syntax--selector.syntax--id {
+  color: #61afef;
+}
+.syntax--source.syntax--css .syntax--punctuation.syntax--selector.syntax--attribute {
+  color: #abb2bf;
+}
+</style>
+        </head>
+        <body class='markdown-preview' data-use-github-style><h1 id="kppp帝竜">KPPP帝竜</h1>
+<h3 id="◎any％rtaにおける基本戦略"><strong>◎Any％RTAにおける基本戦略</strong></h3>
+<p>初代ななどらのAny％RTAにおいて、最序盤以外はほぼすべてナイトの「騎士の憤怒」というスキルで攻撃を行う。<br>これは</p>
+<p><span class="aka">通常攻撃のダメージ<br>×<br>味方死亡補正(スキルレベルによって上昇)<br>×<br>1.2^(死亡者の数)<br>×<br>1.3^(死亡したプリンセスの数)</span><br>×<br>1.5^(ロストしたローグの数)</p>
+<p>という計算式でダメージが計算されるスキルで、このうちロストしたローグはまず0人なのでこの項は無視できる。</p>
+<p>計算式を見てわかる通り、仲間に死亡者がいるほど火力が上がり、その仲間がプリンセスだと余計に倍率が上乗せされる。<br>パーティーメンバーに死亡者がいない場合には使用できないという条件があるため、通常プレイではあまり活用されていない気がするが、RTAを行う上では</p>
+<p>・戦闘で得た経験値がパーティーメンバーの人数で頭割りされる<br>・ターンごとに入力するコマンドが、メンバーが少ないほど短く済む</p>
+<p>という点で非常にかみ合っている。<br>この爆発的な倍率を持っていながら消費マナは4とメイジの魔法よりも低く、さらに全体攻撃となっている。</p>
+<p>そこでこのAny％RTAでは、<span class="aka">2人のプリンセスが常に死亡した状態で進行</span>し、ナイトがひたすら騎士の憤怒を打ちまくることになる。<br>当然2人旅となるため全滅の可能性と隣り合わせのため、通すことを第一に置く場面では出来る限りこまめなセーブをすることが求められる。</p>
+<p>この騎士の憤怒を取得するためには「騎士道マスタリー」をLv8まで上げる必要があり、<span class="aka">騎士の憤怒を取得するために必要なSPは10</span>となる。<br>キャラクターを登録する際に最初に与えられるSP3を含めると、通常SP10にするにはレベル7まで上げなければならないが、<span class="aka">ギルドオフィスで名前を入力する際に7職業×4人それぞれに設定されたパスワードを入力すると、初期SPが4になる。</span>これを活用することで、レベル6で騎士の憤怒を取得できることになる。<br>このレベルまではどうしても上げざるを得ないため、最序盤のみ手軽に火力を出しやすいメイジ3人で魔法を打ちまくる。</p>
+<p>メイジは序盤のみ使用するため、この3人がいくらレベルが上がってもその後のタイムにいい影響はない。4人パーティーで稼ぐより、ナイトが1人で騎士の憤怒で一掃するほうが効率が良いからだ。<br>理想としては<span class="aka">「始まりの翼竜」を倒した時点でレベル6</span>になるように経験値≒エンカウント量をコントロールしたいところ。</p>
+<p>そのほか、RTAとしては高いエンカウント率が気になるので、竹笛やロナムフルートといったエンカウント率を下げる道具を積極的に使っていく。</p>
+<p>戦闘中はリングコマンドの特性を活用したい。<br>戦闘開始時は必ず通常攻撃にカーソルが合っているため、<br><span class="aka">・左に1で逃走<br>・左に2でEX<br>・右に1で防御<br>・右に2でスキル<br>・下でアイテム</span><br>となる。そのほかによく使うコマンドとしては<br><span class="aka">・スキルから下でEX<br>・EXから上でスキル<br>・防御から上でEX<br>・アイテムから左に1でスキル<br>・アイテムから右に2でEX</span><br>これらを素早く入力できるとかっこいい。</p>
+<p>ちなみに戦闘から逃走する場合、攻略本を見る限り5ターン逃走を試みると確定で逃げられる以外には「味方の平均レベルとSPDが敵を上回っているほど逃げやすくなる」としか表現されていない。<br>体感では、相手とのレベル差が8くらいはないと初ターンの逃げが安定することはないため、基本的にランダムエンカウントは倒して対処するべき。<br>ただし先制攻撃となったエンカウントでは初ターンのみ100％逃げられるという仕様があるため、<span class="aka">シンボルエンカウントに背後から接触できればエンカウント率をリセットしながら確実に逃げることができる。</span><br>マップ上でのシンボルの動きを詳細に把握し、なるべくシンボルを渡り歩けると速く進行できる。<br><br></p>
+<h3 id="チュートリアル">チュートリアル</h3>
+<p>【カザン】<br>仲間を作成<br>ナイト③：＠ません。ほ<br>メイジ①：＠うもぜひた<br>メイジ②：＠のしんでく<br>メイジ③：＠ださい。ぷ<br>プリンセス①：＠ずやでした<br>プリンセス②：＠ではみなさ<br>プリンセス③：＠のぼうけん<br>プリンセス④：＠にさちあれ</p>
+<blockquote>
+<p>ナイトは③か④の女性にしましょう。<br>中盤で訪れるマレアイア群島国に入る際、男性キャラがいると時間がかかります。</p>
+</blockquote>
+<p>ギルドオフィスを出て右の壺　<span class="ao">パロの実</span><br>クエストオフィスでメナスと会話、外へ出る</p>
+<p>駆け出しのリタ→運び屋オヤジ→兄想いの少女の順で話を聞く<br>クエストオフィスへ戻って<span class="ora">ギルドはじめました！</span> <span class="ora">旅立つものに祈りを</span> <span class="ora">運び屋ギルドは今日も行く</span>受理<br>駆け出しのリタと運び屋オヤジから話を聞き、外へ</p>
+<p>【フィールド】</p>
+<blockquote>
+<p>ミロスへの道中と、ミロスからの帰路でマスクナッツから木の実を3つ手に入れる必要があります。<br>・カザン側平原　マスクナッツ1<br>・カザン側森　マスクナッツ2<br>・カザン側森　ラビ3マスクナッツ1<br>・ミロス側森　マスクナッツ4<br>・ミロス側平原　スライム1マスクナッツ2<br>というエンカパターンがあります。<br>チュートリアルを抜けられるかは運ゲーです。</p>
+</blockquote>
+<p><strong>メイジ</strong><br>　<code style="font-family: SHG30;">フリーズマスタリー　０→３</code><br>　<code style="font-family: SHG30;">フリーズ　０→１</code><br>ポータル・セスへ向かい、初心者のエミリを勧誘</p>
+<p>【フィールド】<br>ミロスへ向かう。　<br>【ミロス】<br>モテモテ騎士に依頼の品を届ける<br>城下町北西 クエストオフィス外左の壺　<span class="ao">200G</span><br>武器屋で買い物<br>　<span class="ao">プレートアーマー</span> → ナイト<br>一泊してポータルセスへ向かう<br>【フィールド】<br>ロラッカ山洞へ向かい、素人のハリスを勧誘する。</p>
+<p>【カザン】<br><span class="aka">宿屋で一泊</span><br>運び屋オヤジ→兄想いの少女→駆け出しのリタの順で会話</p>
+<blockquote>
+<p>運び屋オヤジに報告するとBダッシュできるようになります。陸上ではダッシュ移動が基本です。</p>
+</blockquote>
+<p>クエストオフィスで報告<br>武器屋と道具屋で買い物<br>　<span class="ao">トラベルハット</span>３個→メイジそれぞれに装備<br>　<span class="ao">パロの実</span>　15個</p>
+<blockquote>
+<p>トラベルハットを装備するとINTが1上昇し、魔法の威力が上がります。特に始まりの翼竜の確定数に関わるため重要です。</p>
+</blockquote>
+<p>宿屋のほうへ進むとイベント後にミッション<span class="ora">「洞穴に潜む影」</span>発生<br>クエストオフィスでミッション受理、名も無き小洞へ向かう</p>
+<p>【名も無き小洞】<br>オータムトータスとウィスプにはEXを使用<br>レベル4になり次第スキル振り、ボス戦までにレベル4になる見込みがなければダンジョンに入ってすぐにスキルを振る<br><strong>メイジ</strong><br>　<code style="font-family: SHG30;">フリーズ　1→3(or4)</code><br>泉で回復して猛る野獣戦</p>
+<blockquote>
+<p><strong>vs猛る野獣</strong>　LIFE400<br>全員EXフリーズを打っていく。乱数で2ターンで倒せる。</p>
+</blockquote>
+<p>【フィールド】<br>EX使用OK、逃げながらカザンに戻る。<br>【カザン】<br><span class="aka">死亡者を蘇生する</span><br>クエストオフィスへ行きミッション報告<br>ギルドオフィスでイベント、自動で宿屋に一泊した扱いになる<br>宿屋地下の酒場で居眠り客と会話し、<span class="ora">犯人は誰だ！？</span>発生<br>クエストオフィスでクエストを受理<br>大統領のところへ向かいミッション<span class="ora">「大統領からの依頼」</span>を受ける<br>酒場に向かい以下の手順で会話<br>　依頼者と会話 → カップル女から順に全員会話 → 気弱な旅人「いいえ」 → カップル男「はい」<br>ひたすら連打してクエストクリア、　<span class="ao">サバイバルベルト</span>を入手<br>ミロスへ向かう</p>
+<p>【フィールド】　EX使用OK<br>ここまでの経験値の入り具合と相談し平原か森か決める<br>【ミロス】<br>王宮で話を聞く<br>一泊してロラッカ森林へ向かう</p>
+<p>【ロラッカ森林】<br>ノワリーと会話し中に入る許可を貰う<br><span class="aka">オオシシはEXで対処</span><br><strong>メイジ</strong><br>　<code style="font-family: SHG30;">INTボーナス０→１</code><br>　<code style="font-family: SHG30;">フリーズ３→５</code></p>
+<blockquote>
+<p><strong>vs始まりの翼竜</strong>　LIFE560<br>　全員EXフリーズ連打<br>※レベル6になっていれば、INTボーナス1、トラベルハットの状態でEXフリーズ5を打つと約100出る。この状態を2人+INTボーナスを振っていない1人で約80となりちょうど2ターンキルできる計算になっています。</p>
+</blockquote>
+<p>【カザン】<br><strong>ナイト</strong><br>　<code style="font-family: SHG30;">騎士道マスタリー　０→８</code><br>　<code style="font-family: SHG30;">騎士の憤怒　０→１</code><br>　<span class="ao">サバイバルベルト・旅人のお守り</span> → ナイト<br>ギルドオフィスへ向かい、エランと会話するとイベント開始。</p>
+<h3 id="真オープニング">真オープニング</h3>
+<p>■イベント休憩　4:20程■<br><span class="aka">ロゴが表示されたらAボタンを押さないと進行しないので注意</span><br>【ミロス】<br>イベント後王宮を時計回りに回る<br>カリユ・武器屋・微笑む・クロウと会話<br>クロウ近くの壺（下）から<span class="ao">マナ水</span></p>
+<p>隊列で<span class="aka">ナイト後衛プリンセス前衛にする</span><br>道具屋北の倉庫で整理する男から<span class="ao">竹笛</span>を貰う<br>道具屋と武器屋に寄ってフィールドへ<br>　道具屋：<span class="ao">パロの実</span>　15個<br>　武器屋：<span class="ao">ブロードソード</span>→ナイト<br>　　　　　<span class="ao">スケイルアーマー</span>→装備させない</p>
+<p>【フィールド】EX使用OK<br>プリンセスを3人とも落とし、<span class="aka">LIFEの管理をしながらロラッカ森林周辺のフロワロを潰してまわる。</span><br>ナイトのレベルを10まで上げる。<br>稼ぎが終わったらミロスに戻る</p>
+<blockquote>
+<p>とにかく無理は禁物。襲い掛かられて麻痺や眠りを食らったら命はないと思ってください。慣れないうちはミロスを出る前にセーブをしましょう。</p>
+</blockquote>
+<p>【ミロス】<br>宿屋で一泊セーブ後ロラッカ森林へ</p>
+<p>【ロラッカ森林】EX極力使わない<br>２マップ目に入る前にスキルを振る<br><strong>ナイト</strong><br>　<code style="font-family: SHG30;">騎士の憤怒　1→5</code><br>１･２･４体目のサーペンタスに当たって通常憤怒で倒す<br>乱数次第で落ちないので<span class="aka">247以下</span>なら再度憤怒、<span class="aka">258以上</span>なら通常攻撃で倒す<br><span class="ao">シルクウィップ</span>が落ちたかどうかは要チェック</p>
+<p>【ロラッカ山洞】EX極力使わない<br>グリフィナスを使いエンカリセしながら進む<br>１体目のグリフィナスに当たった後竹笛使用<br>２マップ目右上、サバイバルベルト近くで外側を回っているグリフィナスを倒す。300以上入れば2ターン目は通常攻撃でOK。<br>宝箱から<span class="ao">サバイバルベルト</span>を回収</p>
+<blockquote>
+<p><strong>vsトリケロス</strong>　LIFE580<br>通常憤怒3発で倒しにいくが、１･２発目の乱数が悪ければ3ターン目にEX使用。</p>
+</blockquote>
+<p>撃破後、王者の剣キャンプにて準備を行う<br>　(あれば)<span class="ao">シルクウィップ</span>　 → プリンセス<br>　<span class="ao">スケイルアーマー</span> → プリンセス<br>　<span class="ao">サバイバルベルト</span> → プリンセス<br>ユーリィと会話して回復<br>　万屋ゲンちゃん：<span class="ao">パロの実</span>　15個<br><span class="aka">並び替えを行い、ナイト・生存プリンセスを後衛、死体プリンセスを前衛に出す</span><br><strong>ナイト</strong><br>　<code style="font-family: SHG30;">クレンチング　０→●</code><br><strong>プリンセス</strong><br>　<code style="font-family: SHG30;">INTボーナス　０→１</code><br>　<code style="font-family: SHG30;">キュア　０→３</code><br>カザンに向かう</p>
+<p>【フィールド】<br>道中で死体Pを落とし、その戦闘中に隊列変更でナイト前衛、プリンセス後衛、死体前衛にする</p>
+<p>【ポータル・セス】<br>慣れないうちはセーブしよう。</p>
+<p>【カザン共和国】危険なエンカはEX使用<br>１マップ目は通常エンカしないので、ドラゴハンマードの動きに注意すればよい<br>2マップ目、2～4体目のドラゴハンマードのうち2体倒す。憤怒2回でちょうど倒せるが、頭突きで麻痺する可能性があるためプリンセスはキュアを入れる。<br>ドラゴハンマードを2体倒せていればプリンセスのレベルが3にはなっているはずなので、最終マップの泉手前でスキル振り行い、回復を行う。<br><strong>プリンセス</strong><br>　<code style="font-family: SHG30;">キュア　３→５</code><br>宝箱から<span class="ao">パロメディス</span>を回収し手負いの竜王戦</p>
+<blockquote>
+<p><strong>vs手負いの竜王</strong>　LIFE1300<br>プリンセスは毎ターンナイトにキュアをかける。キュアのレベルが5であれば全回復できるはず。<br>プリンセス自身が殴られても放置でよいが、生き抜けるなら生き抜きたい。<br><span class="aka">通常憤怒が約200、EXが3発残っていれば通常2回EX3回でちょうど倒せる計算</span>。ダメージ計算がものをいいます。</p>
+</blockquote>
+<p>【カザン】<br>メナスのところに向かう<br>道具屋に寄って買い物をする<br>　道具屋：<span class="ao">パロの実</span>　20個<br>　　　　　<span class="ao">竹笛</span>　10個<br>　　　　　<span class="ao">シフター</span>　1個<br>宿屋で一泊しポータル・セスへ向かう<br>【ポータル・セス】<br>ポータルを起動する。プリンセスのレベルが5以上ならスキル上げし、セーブ。<br><strong>プリンセス</strong><br>　<code style="font-family: SHG30;">フィアーマスタリー　1</code><br>　<code style="font-family: SHG30;">絶叫金切り　1</code></p>
+<p>【フィールド】<br>ちゃんとレベルが上がってれば、ほとんど1逃げ出来るはず。逃げられなかったらどんまい。</p>
+<p>【トドワ山岳】EX使用してOK<br>ドラゴンでエンカリセをしながら進んでいく（竹笛は使用しない）<br>１マップ目のトリケロスエリアで宝箱から<span class="ao">スチールブレスト</span>回収<br>　<span class="ao">スチールブレスト</span> → ナイト</p>
+<blockquote>
+<p>ムジナ2シャドウ2、アサナキ2ムジナ1といった睡眠や混乱を持ったエンカがあるので、ここでナイトのEXを使いましょう。それ以外のエンカではEX金切りがうまく働いてくれます。</p>
+</blockquote>
+<p>【サイモン】<br><span class="aka">装備を変更</span><br>　<span class="ao">旅人のお守り</span> → プリンセス<br>　<span class="ao">サバイバルベルト</span> → ナイト<br>宿屋で回復してセーブ。ゴウガ竹林へ</p>
+<p>【ゴウガ竹林】危険なエンカはEX使用<br><strong>●竹笛目安</strong><br>1.フィールドに出た瞬間<br>2.1マップ目右の縦通路を抜けて少し歩いた後<br>3.1マップ目プテラノザウラス区間を抜けた後<br>4.2マップ目左エリアに入った後<br>5.3マップ目で白銀水を回収するとき<br>6.マナ水を回収するとき</p>
+<blockquote>
+<p>本ゲームのなかでもトップクラスに難しいダンジョンです。まずは何よりフライドラゴニカ(通称トンボ)の動きに注意。<br>EXの使い方ですが、<br><span class="aka">・グリンヘルムのいるエンカでは金切り<br>・デスフラワーのいるエンカでは憤怒</span><br>はマストです。グリンヘルムが守ってしまうと、死体が2体ではEX憤怒で倒し切れません。また、デスフラワーは技不能を使います。技が不能になります。<br>ナガモノ2ラウンドホーン2、アイススライム2ナガモノ1は比較的安全なエンカのため、EXの残数によっては通常憤怒もあり。</p>
+</blockquote>
+<p>３マップ目南通路左の宝箱から<span class="ao">白銀水</span><br>余裕があれば北西の宝箱から<span class="ao">マナ水</span><br>泉で回復を行う<br>オルグドラゴニスでエンカリセしてアイゼンに向かう</p>
+<p>【フィールド】</p>
+<blockquote>
+<p>アイゼンに着くまでがゴウガ竹林です。泉でLIFEとMANAは回復できていても、EXは枯渇しているはず。一歩間違えるとサイモンに戻されます。</p>
+</blockquote>
+<p>【アイゼン】<br>美食家の家に裏口から入り、樽から<span class="ao">レグエレム</span><br>ソウゲンに会いに行き話を聞く。「いいえ」のほうが若干速い。<br>王室左の隠し部屋の壺（右）から<span class="ao">ヴォルカのグラフ</span><br>1マップ戻り、すぐ左の部屋から２階に登る<br>壺（上）から<span class="ao">ルビリア</span>、左上の引き出しから<span class="ao">レグヒータ</span>回収<br>クエストオフィス左上の壺から<span class="ao">ヒールエアロ</span><br><span class="aka">並び替えを行いナイトを後衛、プリンセスを前衛に</span><br>宿屋に一泊してセーブし、ヒヨロン神水洞へ</p>
+<p>【ヒヨロン神水洞】危険なエンカはEX使用<br><span class="aka">いいところでプリンセスを落とす</span><br>入ってすぐにスキル振りを行う<br><strong>ナイト</strong><br>　<code style="font-family: SHG30;">騎士道マスタリ　8→10</code><br>アイゼン兵士と会話するとリッケンとのイベント、ミッション<span class="ora">「デッドブラック討伐」</span>受理。<br>B1北西の部屋で回っているドラゴンたちは、メニューバッファを使うと背後がとりやすい。<br>そのまま竹笛を使いつつエンカリセしつつB2北東からB1へ<br>宝箱から<span class="ao">将剣</span>→ナイト</p>
+<blockquote>
+<p>将剣を手に入れた時点でフェアリドラグを1発、エンシェンタスを2発で倒せるようになります。防御したグリンヘルムも1発。</p>
+</blockquote>
+<p>泉で回復する際、回復前に衝突されないように<span class="aka">並び替えでメンバーを集合</span>。<br>泉を中心に全体を回りながらドラゴンを狩っていく<br>北西の部屋で<span class="ao">マナ水</span>、南西の部屋で<span class="ao">パロメディス</span>回収<br>B2に居るドラゴンを全て倒して回るとだいたいLv26になるはず。<br>Lv26にならなければ適当に雑魚を倒してレベルを上げる<br>泉で回復後<span class="aka">スキルを振って</span>ボス戦<br><strong>ナイト</strong><br>　<code style="font-family: SHG30;">POWボーナス　1</code><br>　<code style="font-family: SHG30;">INTボーナス　3</code><br>　<code style="font-family: SHG30;">ウォークセーフ０→５</code></p>
+<blockquote>
+<p><strong>vsデッドブラック</strong>　LIFE3200<br>完全なる闇は最大LIFEの60％以下になっていると即死する。回復が間に合う限りはボーナスターンになる。<br>道具使用は確実に先制が取れると思っていいので、回復ライン85を厳守する。<br>結果、睡夢の刃を食らわないことを祈る時間。</p>
+</blockquote>
+<p>撃破後洞窟を出てシフターを使用しカザンへ</p>
+<h3 id="世界協定">世界協定</h3>
+<p>【カザン】<br>宿屋で一泊、セーブは不要<br>マップ中央に行くとペンネイベントが起こるので連打でスルー<br>クエストオフィスでミッションを報告<br>メナスと2回会話しプレロマへ向かう</p>
+<p>【プレロマ】<br>頂上への道中、右塔4階の左の部屋中央の本棚から <span class="ao">レグショッカ</span><br>頂上でイベント後、話を聞くために1階受付嬢のところへ。<span class="ora">「ファロを探せ！」</span>発生。<br>クエストを受理して追いかけっこを始める</p>
+<blockquote>
+<p>2F→3F→右4F→右5F→6F→左5F→左4F<br>→左5F→6F→右5F→右4F→3F→物置</p>
+</blockquote>
+<p>物置の奥にある壺から<span class="ao">800G</span>、その奥の宝箱から<span class="ao">フィジカルガード</span>回収<br>少し戻って物置内左上に積み上げられた本から<span class="ao">レグヒータ</span>回収<br>外へ出て竹笛を使用し、ポータルフェルへ向かう</p>
+<p>【ポータルフェル】<br>ポータルを起動しセーブ。港町ゼザへ向かう</p>
+<p>【フィールド】基本的に敵はEX憤怒で対応</p>
+<blockquote>
+<p>このタイミングのみ船の移動が陸上を走るより遅いため、陸上を走りましょう。ゼザで高速操舵を手に入れてからは極力海上を進むほうが速くなります。</p>
+</blockquote>
+<p>【港町ゼザ】<br>宿屋で一泊<br>道具屋で不要なアイテムを売却しアイテム購入<br>　道具屋：<span class="ao">竹笛</span>　8個<br>　　　　　<span class="ao">シフター</span>　4個<br>道具屋裏の樽から<span class="ao">821G</span><br>北西の建物２階の宝箱から<span class="ao">ミルロメディス</span>と<span class="ao">レグエレム</span><br>操舵屋下の壺から<span class="ao">マナ水</span><br>操舵屋で<span class="ao">高速操舵</span>と<span class="ao">南海操舵</span>を購入<br>隣の建物内の壺（上）から<span class="ao">マナ水</span><br>右上の建物内の大壺から<span class="ao">ヒールエアロ</span>、２階の壺（下）から<span class="ao">394G</span><br>外へ出て、竹笛とウォークセーフを使ってマレアイアに向かう</p>
+<p>【フィールド】EXで対応</p>
+<p>【マレアイア】<br>右の離れ小島にある民家右の壺から<span class="ao">1000G</span><br><span class="aka">王城に行ってミッションを発生させる</span><br>王室右の隠し部屋にある<span class="ao">ロナムネックレス</span>を回収<br>装備変更を行う。<span class="aka">装備欄一番下のサバイバルベルト</span>をロナムネックレスにする<br>　<span class="ao">ロナムネックレス</span>→ ナイト<br>　<span class="ao">サバイバルベルト</span> → プリンセス<br>１マップ戻り下り階段から地下へ<br>上の壺から<span class="ao">900G</span>、右の袋から<span class="ao">ロナムフルート</span>回収<br>南西武器屋上の樽（下）から<span class="ao">パロメディス</span>を回収<br>武器屋で不要なものを売り払い買い物<br>　武器屋：<span class="ao">エストック</span><span class="aka">（装備させない）</span><br>宿屋でプリンセスを蘇生<br>一泊して外へ出てシフター使用</p>
+<p>【ポータル・フェル】<br>セーブして外へ</p>
+<p>【フィールド】<br><strong>●竹笛・ウォークセーフ目安</strong><br>1.外に出た瞬間<br>2.内海のフロワロエリア終盤あたり<br>3.上陸して砂漠地帯に入ったら<br>4.帝国領監視キャンプを出たら</p>
+<p>海上では、フロワロのダメージを重ねていない限り危険な戦闘はそこまでない。憤怒防御でOK。<br>砂漠地帯で上陸、ポータル・レーへ向かう。<br><span class="aka">マンダラファンとサンドトラップが石化、誘惑を持っているためEX憤怒</span><br>マナが無くなってきたらプリンセスがマナ水使用</p>
+<p>【ポータル・レー】　<br>起動して帝国領監視キャンプへ向かう</p>
+<p>【帝国領監視キャンプ】<br>入って西の壺から<span class="ao">パロメディス</span><br>東の壺から<span class="ao">マナ水</span>、北東の壺から<span class="ao">500G</span><br>宿屋1階壺(右)から<span class="ao">ブリザドのグラフ</span>、地下1階壺(下)から<span class="ao">ヒュプノ結晶</span><br><span class="aka">プリンセスが死んでいれば蘇生</span><br>必要に応じて一泊、ネバンプレスへ</p>
+<p>【ネバンプレス】<br>王様に話を聞きに行く<br>城内を時計回りに回りアイテムを回収していく</p>
+<blockquote>
+<p>南西の部屋下の壺から<span class="ao">ルビリア</span><br>北西の部屋の大壺から<span class="ao">ミルロメディス</span><br>北から地下に行き、階段上の引き出しから<span class="ao">トパジス</span>、真ん中上の引き出しから<span class="ao">サフィオ</span>、左下壺から<span class="ao">ヒュプノ結晶</span><br>南東の部屋奥の樽から<span class="ao">567G</span></p>
+</blockquote>
+<p>街へ戻り、反時計回りに回りつつアイテム回収<br>宿屋で一泊する</p>
+<blockquote>
+<p>酒場内右の壺から<span class="ao">マナ水</span><br>北東の建物に裏口から入り、宝箱から<span class="ao">ミルロメディス</span><br>クエストオフィス内の壺から<span class="ao">サフィオ</span><br>城入口左下の壺から<span class="ao">ヒュプノ結晶</span></p>
+</blockquote>
+<p>武器屋に立ち寄り装備購入<br>　武器屋：<span class="ao">タフネスメダル</span> → ナイト<br>　　　　　<span class="ao">タフネスメダル</span> → プリンセス<br>道具屋右の壺（一番下）から<span class="ao">791G</span><br>外へ出てシフター使用</p>
+<p>【ポータル・レー】<br>セーブして外へ</p>
+<p>【フィールド】<br>できればプリンセスのLIFEを減らす。竹笛のみ使用してフロワロでダメージを稼ぐとよいかも。</p>
+<p>【デ＝ヴォ砂漠】<br><span class="aka">フレイムイーター戦までにプリンセスのレベルを17以上にする</span><br>1体目のウルフェドラゴでエンカリセ<br><span class="aka">エンカリセ後ロナムフルートを使用</span><br>2、3体目のウルフェドラゴで再度エンカリセし、フレイムイーター前へ<br>フレイムイーター戦前に装備などを整える<br><span class="aka">ナイトを後衛、プリンセスを前衛に変更</span><br><strong>ナイト</strong><br>　<code style="font-family: SHG30;">POWボーナス 2</code><br><strong>プリンセス</strong><br>　<code style="font-family: SHG30;">ノーブルマスタリ　1</code><br>　<code style="font-family: SHG30;">灼熱の韻　10</code><br>　<code style="font-family: SHG30;">堅牢の韻　1</code>　<br>　<span class="ao">エストック</span> → ナイト<br>　<span class="ao">タフネスメダル</span> → ナイト（ロナムネックレス外す）<br><span class="aka">★旧チャートでは圧倒的な運ゲーでしたが、20220531現在の調査の限り、正しい戦闘前の準備と行動で襲い掛かられなければまず間違いなく勝てます。くれぐれもミスのないように。</span></p>
+<blockquote>
+<p><strong>vsフレイムイーター</strong>　LIFE3000<br><span class="aka">灼熱の韻Lv10を付与、姫が3人死亡状態で、EX憤怒が1500以上のダメージになるため、2回の攻撃で片づける戦略</span><br>①襲い掛かられず一番攻撃を受けるパターン<br>1 ナイト：レグヒータ→自分 プリ：EX灼熱の韻 火喰：フレイムヴェイル<br>2 ナイト：パロメディス→自分 プリ：EX堅牢の韻 火喰：攻撃<br>※ナイト後衛プリンセス前衛なので、プリンセスのLIFEが削れていればだいたいプリンセスが死亡<br>3 ナイト：EX憤怒 火喰：ロックキャノン<br>4 ナイト：EXパロメディス 火喰：ロックキャノン<br>5 ナイト：EX憤怒<br>②<br>1 ナイト：レグヒータ→自分 プリ：EX灼熱の韻 火喰：フレイムヴェイル<br>2 ナイト：パロメディス→自分 プリ：EX堅牢の韻 火喰：攻撃　姫死亡<br>3 ナイト：EX憤怒 火喰：フレイムボールorファイアブレス<br>4 ナイト：EX憤怒<br>③初ターンにフレイムヴェイルをしないパターン<br>1 ナイト：レグヒータ→自分 プリ：EX灼熱の韻 火喰：攻撃で姫が死ぬ<br>2 ナイト：EX憤怒 火喰：フレイムヴェイルor攻撃<br>3 ナイト：EX憤怒</p>
+</blockquote>
+<blockquote>
+<p>※ちなみに…<br>・レグヒータ、堅牢の韻Lv1を付与し、スチールブレストを装備した前衛ナイトが受けるダメージ乱数は、ロックキャノンは最大129、フレイムヴェイルの反射が最大30<br>・ナイトLv29がエストック、スチールブレスト、  タフネスメダル2個を装備するとLIFEが163<br>⇒1ターンに受ける最大ダメージより最大LIFEが高いため、確実に1ターン耐えられる！</p>
+</blockquote>
+<h3 id="帝竜討伐">帝竜討伐</h3>
+<p>【ネバンプレス】<br>ナイト前衛、プリンセス後衛に並び替え<br>装備変更をする<br>　<span class="ao">ロナムネックレス</span> → ナイト（タフネスメダル外す）<br>　<span class="ao">タフネスメダル</span> → プリンセス<br>外へ出てシフター使用後、<span class="aka">セスからカザンへ</span></p>
+<p>【カザン】<br>オフィスでミッションを報告<br>メナスのところへ<br>自動でプレロマの会議室へ</p>
+<p>【プレロマ】<br>会議が終わったら外へ出てゼザへ</p>
+<p>【ゼザ】<br>道具屋：<span class="ao">シフター</span>→2個<br>　　　　<span class="ao">竹笛</span>→ 4個<br>操舵屋で<span class="ao">北海操舵</span>購入<br>外へ出てシフター使用後、武村ハイレインへ</p>
+<p>【フィールド】EX使用OK、なるべく北海に入らないように<br>　<span class="aka">船に乗ったら竹笛、ウォークセーフ</span><br>途中、ポータル・スムを起動</p>
+<p>【ハイレイン】<br>道具屋外の左側の雪だるまから<span class="ao">サフィオ</span><br>北東の民家の外の壺(左)から<span class="ao">ソルマネル</span>、その家の中の壺から<span class="ao">レグエレム</span><br>ゼスと会話してヒューロ氷洞に入る許可を得る<br>宿屋で一泊してセーブ<br>南西の民家内右の壺から<span class="ao">パロメディス</span><br>武器屋で不要なものを売却後、アイテム購入<br>　武器屋：アイテム売却し装備を購入<br>　　　　　<span class="ao">古兵の指輪</span> → ナイト<br>　　　　　<span class="ao">古兵の指輪</span> → 装備させない<br>　道具屋：<span class="ao">エクスポータ</span>　2個<br>外へ出てヒューロ氷洞へ</p>
+<p>【ヒューロ氷洞】危険なエンカはEX使用<br><strong>●竹笛、ウォークセーフ目安</strong><br>1.フィールドに出た時<br>2.始式砲刃駆装備時</p>
+<p>左→下→左→上→右→上→右→下→一番下から左→下→左で宝箱から<span class="ao">始式砲刃駆</span>を回収<br>　<span class="ao">始式砲刃駆</span>→ナイト<br>　<span class="ao">スチールブレスト</span>→プリンセス<br>左下方向へ進み<span class="ao">ダークエッジ</span>回収し装備<br>　<span class="ao">ダークエッジ</span>→ ナイト<br>　<span class="ao">古兵の指輪</span> → ナイト（ロナムネックレス外す）<br>エクスポータで脱出</p>
+<p>【フィールド】危険なエンカはEX使用<br>シフターを使いスムからレーに移動<br><span class="aka">帝国領キャンプより西に出たくらいで竹笛ウォークセーフ</span><br>レーから西へ向かいニギリオの宿へ<br>【ニギリオの宿】<br>ジェンジェン爺と会話してミッションを発生させる<br>外へ出てポータル・ゴフからセスへ</p>
+<p>【カザン】<br>ミッションオフィスで、<span class="ora">『謎の帝竜』『インビジブル』『フレイムイーター』</span>を受理<br>　道具屋：<span class="ao">竹笛</span>　20個<br>宿屋で一泊してセーブ、ロラッカ山洞へ</p>
+<p>【ロラッカ山洞】<br><span class="ao">ソルマネル</span>を回収しノザンペスタ側へ抜ける</p>
+<p>【ノザンペスタ】<br><strong>●竹笛、ウォークセーフ目安</strong><br>1.ロラッカ山洞を抜けた時<br>2.1個目のスイッチを操作した時（竹笛だけ）<br>3.1個目の階段を降りた時（竹笛だけ）<br>4.2個目の階段を降りた時（竹笛だけ）</p>
+<p>機械を操作し扉を開けて、一旦外へ<br>ドラゴンの視線が逸れたタイミングで中へ入る</p>
+<blockquote>
+<p>迷路フロア<br>最初の部屋でスイッチ操作<br>下右右　スイッチ操作<br>下下左左左<br>で抜ける</p>
+</blockquote>
+<p>泉で回復してスキルを振る<br><strong>プリンセス</strong><br>　<code style="font-family: SHG30;">INTボーナス　1→5</code><br>　<code style="font-family: SHG30;">キュアⅡ　5</code><br>背後を取って対竜兵器PZ戦</p>
+<blockquote>
+<p>**vs対竜兵器PZ　LIFE3200<br>1 ナイト→憤怒　プリ→灼熱の韻<br>2 ナイト→防御　プリ→防御<br>3 ナイト→憤怒　プリ→キュアⅡ（ナイト）<br>4 ナイト→憤怒　プリ→防御</p>
+</blockquote>
+<p>戦闘後、プリンセスが死んでいたらヒュプノ結晶で蘇生<br>エクスポータ→シフター→フェル→スタリ小遺跡<br>【スタリ小遺跡】<br>ファロと会話し、ポータルフェルへ戻る<br>【ポータル・フェル】<br><span class="aka">プリンセスを前衛に並び替え</span><br>プレロマ研究員と会話して回復後、セーブしてインビジブル戦</p>
+<blockquote>
+<p><strong>vsインビジブル</strong>　LIFE6000<br>1 ナイト→憤怒　　 プリ→EX灼熱の韻<br>2以降 ナイト→EX憤怒　プリ→キュアⅡ（ナイト）</p>
+</blockquote>
+<p>並び順を元に戻す<br>体力を回復する</p>
+<p>【フィールド】<br>フェル→レー→帝国領バ＝ホ<br><span class="aka">フィールドに出たら竹笛ウォークセーフ</span></p>
+<p>【帝国領バ＝ホ】<br>ジェッケと会話してドラゴン探知機を受け取る</p>
+<p>【フィールド】<br><strong>●竹笛、ウォークセーフ目安</strong><br>1.フィールドに出た時<br>2.１個目を設置して折り返し少し歩いた後<br>3.２個目を設置した後<br>4.３個目を設置した後</p>
+<p>探知機１個目　ジョマロン山岳から　　西１北７<br><img alt="tanchiki_Jomalon" src="https://user-images.githubusercontent.com/85177079/174697734-12af78f3-28af-4150-8e44-8137defb8fd3.png"><br>探知機２個目　ヨーバー大滑砂出口から西５南２<br><img alt="tanchiki_Yober" src="https://user-images.githubusercontent.com/85177079/174697764-31e017cc-a9e2-4f46-8a88-c0e3d4146dea.png"><br>探知機３個目　ゴ＝ファ砂漠から　　　東６南４<br><img alt="tanchiki_Gofa" src="https://user-images.githubusercontent.com/85177079/174697532-d77ac329-356c-40fb-80cc-0c030bffeaa8.png"><br>MANAが足りなくなったらマナ水を使ってよい<br>設置し終わったらバ＝ホに戻る</p>
+<p>【帝国領バ=ホ】<br>ジェッケと会話するとイベント発生、自動でネバンプレスへ移動</p>
+<p>【ネバンプレス】<br>　道具屋：<span class="ao">シフター</span>　８個<br>　　　　　<span class="ao">エクスポータ</span>　２個<br>プリンセスが死んでいれば蘇生<br>宿屋で一泊<br>シフターを使いレーへ</p>
+<p>【ポータル・レー】<br>セーブしてジョマロン山岳へ</p>
+<p>【ジョマロン山岳】<br><strong>●竹笛、ウォークセーフ目安</strong><br>1.フィールドに出た時<br>2.１マップ目の階段を上りきった後<br>3.２マップ目の１個目の階段を登った時<br>4.３マップ目の階段を上りきった後<br>5.４マップ目北西</p>
+<p>ジェッケと会話し足止めをお願いする<br><span class="aka">ロストは誘惑持ちなのでEXで対処</span><br>MANAはある程度余裕を持たせておく。スキルを上げてセーブ<br><strong>プリンセス</strong><br>　<code style="font-family: SHG30;">堅牢の韻　1→●</code></p>
+<blockquote>
+<p><strong>vsジ・アース</strong>　LIFE9000<br>1 ナイト→防御、プリ→堅牢の韻<br>2 ナイト→憤怒、プリ→灼熱の韻<br>柔軟に対応　ナイトのLIFEが半分を下回ったら生き残ることを最優先に</p>
+</blockquote>
+<p>【ネバンプレス】<br>宿屋でプリンセスを蘇生し一泊<br>シフターを使いレー→ゴフ→ニギリオの宿</p>
+<p>【ニギリオの宿】<br>ジェンジェン爺と会話し火山に入る許可を得る<br><span class="aka">宿屋で泊まらずセーブだけして</span>火山へ<br><span class="aka">フィールドに出たら竹笛ウォークセーフ</span></p>
+<p>【ドーマ火山】<br><strong>ナイト</strong><br>　<code style="font-family: SHG30;">POWボーナス　●→５</code><br>　<code style="font-family: SHG30;">ガードマスタリー　０→５</code><br>　<code style="font-family: SHG30;">防御体術　０→●</code><br><strong>プリンセス</strong><br>　<code style="font-family: SHG30;">堅牢の韻　●→●</code><br>泉で回復してフレイムイーター戦</p>
+<blockquote>
+<p><strong>vsフレイムイーター</strong>　LIFE6000<br>1 ナイト：レグヒータ→自分<br>　プリ：堅牢の韻<br>2 ナイト：防御<br>　プリンセス：EX灼熱の韻<br>3以降　EX憤怒、EXキュアⅡ<br>レグヒータで1戦目よりさらに楽な戦闘になる<br><span class="aka">自動回復300</span>があるので、体制が整うまでは攻撃しないほうがよい</p>
+</blockquote>
+<p>体力を回復してエクスポータ、ニギリオの宿へ</p>
+<p>【ニギリオの宿】<br>ジェンジェン爺と会話する。<span class="aka">粘らない。</span><br>外へ出てシフターを使いゴフ→セス→カザンへ</p>
+<p>【カザン】<br><span class="aka">ミッションオフィスでミッション３つを報告</span><br>プリンセスを蘇生し、宿屋で一泊後セーブ。フィールドへ。<br>フィールドでイベント発生</p>
+<h3 id="千人砲">千人砲</h3>
+<p>【イベント区間】<br>プレロマに自動で移動する<br>会議室で会議後、シフターを使いセス→カザン<br>カザンでメナスと会話し、セス→フェル→プレロマ<br>プレロマ倉庫地下でエメルと会話<br>フェルからセスへ飛び、南のゴロランの館へ<br>ゴロランの館２階でアイテルと会話し、北西の禁忌の扉からトゥキオンへ</p>
+<p>【フィールド】～【マスカミ遺地】<br><strong>●竹笛、ウォークセーフ目安</strong><br>1.ゴロランの館を出た時<br>2.トゥキオンのフィールドに出た時（竹笛だけ）<br>3.寺の中に入った時（竹笛だけ）</p>
+<p>アイテルとの会話はすべて「はい」<br>右上右右下左上右左上<br>回復しセーブしてタケハヤ戦</p>
+<blockquote>
+<p><strong>vs人類戦士タケハヤ</strong>　LIFE15000<br>1 ナイト→憤怒　　 プリ→EX灼熱の韻<br>2 ナイト→EX憤怒　プリ→EX回復（ナイト）<br>3 ナイト→EX憤怒　プリ→EX回復（ナイト）<br>4 ナイト→EX憤怒<br>半竜の目覚めを使われると物理ダメージが減るので、速攻をかけるほうが無難</p>
+</blockquote>
+<p>エクスポータ→シフターでセス→フィールドへ<br>フィールドに出ると自動でプレロマへ移動する</p>
+<p>【プレロマ】<br>外へ出てシフターを使いセス→カザン</p>
+<p>【カザン】<br>大統領府でメナスと会話<br>　道具屋：<span class="ao">ロナムフルート</span>　18個<br>　　　　　<span class="ao">パロメディス</span>　数個<br>　　　　　<span class="ao">マナ水</span>　数個<br>外に出てセス→フェル→プレロマ</p>
+<p>【プレロマ】<br>最上階でノワリーと会話<br>プリンセスを蘇生し、宿屋で一泊<br>外へ出てフェル→セスへ</p>
+<p>【ポータル・セス】<br>飛行船を呼んでセーブ<br>飛行船で新バロリオン大森林へ</p>
+<p>【新バロリオン大森林】<br><strong>●竹笛、ウォークセーフ目安</strong><br>1.新バロリオン大森林に入った時<br>2.死骸イベントを見た後<br>3.１体目のヘイズシールドの後ろを通る時<br>4.２体目のヘイズシールドの後ろを通る時<br>5.４マップ目に入った時<br>6.４マップ目２体目のヘイズシールドを避けた時<br>7.キャリバーン回収後</p>
+<p>２マップ目南西で<span class="ao">ノーブルチュニカ</span> → プリンセス<br>３マップ目北西で<span class="ao">白銀水</span><br>道中でマナが減ってきたら様子を見て回復する<br>４マップ目北東で石碑を、右から３回左から２回調べる<br>隠し部屋で<span class="ao">キャリバーン</span>→ ナイト<br><strong>ナイト</strong><br>　<code style="font-family: SHG30;">防御体術　●→●</code><br><strong>プリンセス</strong><br>　<code style="font-family: SHG30;">堅牢の韻　●→●</code><br>ボス前で回復してセーブ</p>
+<blockquote>
+<p><strong>vs神体ヘイズ</strong>　LIFE10000<br>1 ナイト→憤怒　プリ：灼熱の韻<br>2 ナイト→憤怒　プリ：EX堅牢の韻<br>3以降　各自敵の行動に対応して攻撃回復</p>
+</blockquote>
+<p>外へ出てシフターでセス→カザン</p>
+<h3 id="未来へのきざはし">未来へのきざはし</h3>
+<p>【カザン】<br>屋２階のくつろぐルシェから<span class="ao">各種アイテム</span>を貰う<br>大統領府でメナスと会話しミッション<span class="ora">『未来へのきざはし』</span>受理<br>ジョニーからコンキスタアクスもらう<br>道具屋で不用品を売却しアイテム買い込み<br>　道具屋：<span class="ao">ソルマネル</span>　　８個<br>　　　　　<span class="ao">ポワゾル</span>　５個<br>　　　　　<span class="ao">ヒュプノ結晶</span>　３個<br>　　　　　<span class="ao">マナ水</span>　15個<br>　　　　　残ったお金で回復アイテム購入<br>外へ出てセス→スム</p>
+<p>【ポータル・スム】<br>飛空艇を呼ぶ<br>飛空艇でハイレインへ</p>
+<p>【武村ハイレイン】<br>プリンセスを蘇生して宿屋で一泊、セーブ<br>飛空艇で北極へ</p>
+<blockquote>
+<p><strong>vsトリカラード</strong>　LIFE7000<br>1 ナイト→憤怒　プリ→防御<br>2以降 意地で倒す(後々更新します…)</p>
+</blockquote>
+<p>【紅杭の塔】<br><strong>●竹笛、ウォークセーフ目安</strong><br>1.塔の中に入った時<br>2.２マップ目北西<br>3.中継の次のエリアに入った時<br>4.泉手前<br>5.白銀水を回収した時<br>6.３体目のドラゴメガマウνを倒した時<br>7.中継から２マップ目北東<br>8.中継から２マップ目に入った時<br>9.泉手前<br>10.中継から２マップ目中間あたり</p>
+<p><span class="aka">それぞれのドラゴンの動きを把握すること！</span></p>
+<p>マップ2<br>左上でウルフェの視界に入らないように移動<br>マップ3<br>左回りでドラゴン回転中。フェアリの通過待ち。<br>マップ4<br>最速で移動できると右下のウルフェに見つからないはず。ワイバーンνを倒すと階段が出現する。<br><br>マップ6<br><span class="aka">階段を登ったら一瞬入力をニュートラルに。ストナタとグリフィナスの後ろをついていく。下の位置で待機、2体通過したら即ついていくとギリギリ戦わずに済む。</span><br><img alt="kurenai_stgr" src="https://user-images.githubusercontent.com/85177079/174701888-ae258a4f-60d5-420c-a930-c9e7f90b2133.png"><br>マップ7<br>ストグリ1の通過を見送り、柱を大回りすると2組目が通り過ぎる。宝箱から<span class="ao">ミルロメディス</span>。3組目はうまく撒く。<br>マップ8<br>左から２番目を倒すと階段が出現する。フロワログラスとエンカして乱入させる。<br>マップ9<br>泉で回復してセーブ<br><br>マップ10<br>階段を登ったら一瞬入力をニュートラルに。<br>マップ11<br>少し大回りし<span class="ao">白銀水</span>。<br>マップ12<br>ドラゴメガマウνを3匹全て倒すと階段が出現する<br><br>マップ14・15<br>かなり複雑な動きなので、動画を参照してください<br>マップ16<br>ドラゴアングリνを４体時計回りに倒す<br>その後、12時の部屋でビトラドラゴニスを乱入させ倒し階段を出現させる<br>マップ17<br>泉で回復してセーブ<br><br>マップ18<br>上のルートを進む<br>マップ19<br>真ん中の列でジルホーン、ドラゴニクレイ(＆タワー)、ロン、ティラノを倒す<br>マップ20<br>泉で回復して最後のスキル振り、セーブ<br><strong>ナイト</strong><br>　<code style="font-family: SHG30;">防御体術　●→●</code><br>　<code style="font-family: SHG30;">POWボーナス　●→●</code><br><strong>プリンセス</strong><br>　<code style="font-family: SHG30;">堅牢の韻　●→10</code></p>
+<blockquote>
+<p><strong>vsニアラ</strong>　LIFE3000<br>バフがかかっていると虚無を使うため、プリンセスは常に灼熱を入れ続ける。充分回復した状態で倒して2戦目の態勢を整える。<br><strong>vs神体ニアラ</strong>　LIFE10000<br>●攻撃できるタイミングが限られている。エンヴィーで呪いになっているときとラースのターンは返しのダメージで確実に死亡するので絶対に攻撃してはいけない。百花繚乱は防御しないとそもそも耐えられない。<br>・プライドn　単体魔法攻撃<br>・エンヴィーn　全体呪い<br>・グラトニー2～3　全体斬攻撃<br>・スロース1　リジェネ<br>・ラースn　直接攻撃壊反撃<br>・グリード2～3　炎複数回攻撃<br>・ラスト1　強化消去<br>・百花繚乱1　花依存攻撃<br>灼熱の韻と堅牢の韻を入れてひたすら攻撃と回復<br>アイテム使用は基本的に先制できる<br><span class="aka">ラストに回るまで回復し続け、ラストを食らったらナイト防御プリEX灼熱の韻。次のターンのプライドをミルロメディスで全回復して継戦。</span></p>
+</blockquote>
+<p>最後までメッセージ送りを忘れずに<br>タイトル画面でタイマーストップ<br><br></p>
+<h3 id="スペシャルサンクス">スペシャルサンクス</h3>
+<p>本チャートは、ポータル・ペタというサイトも運営されているぺたさん(Twitter:@AkMeda)が、長期間かけて完成させたものをアップデートしたものです。<br>自分でちまちまチャートを書こうとしていたところにお声がけいただき、元のチャートを快くお譲り頂いた経緯があります。<br>この場を借りて深く御礼申し上げます。</p></body>
+      </html>
 
-### **◎Any％RTAにおける基本戦略**
-初代ななどらのAny％RTAにおいて、最序盤以外はほぼすべてナイトの「騎士の憤怒」というスキルで攻撃を行う。
-これは
-
-<span class="aka">通常攻撃のダメージ
-×
-味方死亡補正(スキルレベルによって上昇)
-×
-1.2^(死亡者の数)
-×
-1.3^(死亡したプリンセスの数)</span>
-×
-1.5^(ロストしたローグの数)
-
-という計算式でダメージが計算されるスキルで、このうちロストしたローグはまず0人なのでこの項は無視できる。
-
-計算式を見てわかる通り、仲間に死亡者がいるほど火力が上がり、その仲間がプリンセスだと余計に倍率が上乗せされる。
-パーティーメンバーに死亡者がいない場合には使用できないという条件があるため、通常プレイではあまり活用されていない気がするが、RTAを行う上では
-
-・戦闘で得た経験値がパーティーメンバーの人数で頭割りされる
-・ターンごとに入力するコマンドが、メンバーが少ないほど短く済む
-
-という点で非常にかみ合っている。
-この爆発的な倍率を持っていながら消費マナは4とメイジの魔法よりも低く、さらに全体攻撃となっている。
-
-そこでこのAny％RTAでは、<span class="aka">2人のプリンセスが常に死亡した状態で進行</span>し、ナイトがひたすら騎士の憤怒を打ちまくることになる。
-当然2人旅となるため全滅の可能性と隣り合わせのため、通すことを第一に置く場面では出来る限りこまめなセーブをすることが求められる。
-
-この騎士の憤怒を取得するためには「騎士道マスタリー」をLv8まで上げる必要があり、<span class="aka">騎士の憤怒を取得するために必要なSPは10</span>となる。
-キャラクターを登録する際に最初に与えられるSP3を含めると、通常SP10にするにはレベル7まで上げなければならないが、<span class="aka">ギルドオフィスで名前を入力する際に7職業×4人それぞれに設定されたパスワードを入力すると、初期SPが4になる。</span>これを活用することで、レベル6で騎士の憤怒を取得できることになる。
-このレベルまではどうしても上げざるを得ないため、最序盤のみ手軽に火力を出しやすいメイジ3人で魔法を打ちまくる。
-
-メイジは序盤のみ使用するため、この3人がいくらレベルが上がってもその後のタイムにいい影響はない。4人パーティーで稼ぐより、ナイトが1人で騎士の憤怒で一掃するほうが効率が良いからだ。
-理想としては<span class="aka">「始まりの翼竜」を倒した時点でレベル6</span>になるように経験値≒エンカウント量をコントロールしたいところ。
-
-
-そのほか、RTAとしては高いエンカウント率が気になるので、竹笛やロナムフルートといったエンカウント率を下げる道具を積極的に使っていく。
-
-戦闘中はリングコマンドの特性を活用したい。
-戦闘開始時は必ず通常攻撃にカーソルが合っているため、
-<span class="aka">・左に1で逃走
-・左に2でEX
-・右に1で防御
-・右に2でスキル
-・下でアイテム</span>
-となる。そのほかによく使うコマンドとしては
-<span class="aka">・スキルから下でEX
-・EXから上でスキル
-・防御から上でEX
-・アイテムから左に1でスキル
-・アイテムから右に2でEX</span>
-これらを素早く入力できるとかっこいい。
-
-ちなみに戦闘から逃走する場合、攻略本を見る限り5ターン逃走を試みると確定で逃げられる以外には「味方の平均レベルとSPDが敵を上回っているほど逃げやすくなる」としか表現されていない。
-体感では、相手とのレベル差が8くらいはないと初ターンの逃げが安定することはないため、基本的にランダムエンカウントは倒して対処するべき。
-ただし先制攻撃となったエンカウントでは初ターンのみ100％逃げられるという仕様があるため、<span class="aka">シンボルエンカウントに背後から接触できればエンカウント率をリセットしながら確実に逃げることができる。</span>
-マップ上でのシンボルの動きを詳細に把握し、なるべくシンボルを渡り歩けると速く進行できる。
-<br>
-### チュートリアル
-
-【カザン】
-仲間を作成
-ナイト③：＠ません。ほ
-メイジ①：＠うもぜひた
-メイジ②：＠のしんでく
-メイジ③：＠ださい。ぷ
-プリンセス①：＠ずやでした
-プリンセス②：＠ではみなさ
-プリンセス③：＠のぼうけん
-プリンセス④：＠にさちあれ
->ナイトは③か④の女性にしましょう。
-中盤で訪れるマレアイア群島国に入る際、男性キャラがいると時間がかかります。
-
-ギルドオフィスを出て右の壺　<span class="ao">パロの実</span>
-クエストオフィスでメナスと会話、外へ出る
-
-駆け出しのリタ→運び屋オヤジ→兄想いの少女の順で話を聞く
-クエストオフィスへ戻って<span class="ora">ギルドはじめました！</span> <span class="ora">旅立つものに祈りを</span> <span class="ora">運び屋ギルドは今日も行く</span>受理
-駆け出しのリタと運び屋オヤジから話を聞き、外へ
-
-【フィールド】
->ミロスへの道中と、ミロスからの帰路でマスクナッツから木の実を3つ手に入れる必要があります。
-・カザン側平原　マスクナッツ1
-・カザン側森　マスクナッツ2
-・カザン側森　ラビ3マスクナッツ1
-・ミロス側森　マスクナッツ4
-・ミロス側平原　スライム1マスクナッツ2
-というエンカパターンがあります。
-チュートリアルを抜けられるかは運ゲーです。
-
-**メイジ**
-　``フリーズマスタリー　０→３``
-　``フリーズ　０→１``
-ポータル・セスへ向かい、初心者のエミリを勧誘
-
-【フィールド】
-ミロスへ向かう。　
-【ミロス】
-モテモテ騎士に依頼の品を届ける
-城下町北西 クエストオフィス外左の壺　<span class="ao">200G</span>
-武器屋で買い物
-　<span class="ao">プレートアーマー</span> → ナイト
-一泊してポータルセスへ向かう
-【フィールド】
-ロラッカ山洞へ向かい、素人のハリスを勧誘する。
-
-
-【カザン】
-<span class="aka">宿屋で一泊</span>
-運び屋オヤジ→兄想いの少女→駆け出しのリタの順で会話
->運び屋オヤジに報告するとBダッシュできるようになります。陸上ではダッシュ移動が基本です。
-
-クエストオフィスで報告
-武器屋と道具屋で買い物
-　<span class="ao">トラベルハット</span>３個→メイジそれぞれに装備
-　<span class="ao">パロの実</span>　15個
->トラベルハットを装備するとINTが1上昇し、魔法の威力が上がります。特に始まりの翼竜の確定数に関わるため重要です。
-
-宿屋のほうへ進むとイベント後にミッション<span class="ora">「洞穴に潜む影」</span>発生
-クエストオフィスでミッション受理、名も無き小洞へ向かう
-
-【名も無き小洞】
-オータムトータスとウィスプにはEXを使用
-レベル4になり次第スキル振り、ボス戦までにレベル4になる見込みがなければダンジョンに入ってすぐにスキルを振る
-**メイジ**
-　``フリーズ　1→3(or4)``
-泉で回復して猛る野獣戦
->**vs猛る野獣**　LIFE400
-全員EXフリーズを打っていく。乱数で2ターンで倒せる。
-
-【フィールド】
-EX使用OK、逃げながらカザンに戻る。
-【カザン】
-<span class="aka">死亡者を蘇生する</span>
-クエストオフィスへ行きミッション報告
-ギルドオフィスでイベント、自動で宿屋に一泊した扱いになる
-宿屋地下の酒場で居眠り客と会話し、<span class="ora">犯人は誰だ！？</span>発生
-クエストオフィスでクエストを受理
-大統領のところへ向かいミッション<span class="ora">「大統領からの依頼」</span>を受ける
-酒場に向かい以下の手順で会話
-　依頼者と会話 → カップル女から順に全員会話 → 気弱な旅人「いいえ」 → カップル男「はい」
-ひたすら連打してクエストクリア、　<span class="ao">サバイバルベルト</span>を入手
-ミロスへ向かう
-
-【フィールド】　EX使用OK
-ここまでの経験値の入り具合と相談し平原か森か決める
-【ミロス】
-王宮で話を聞く
-一泊してロラッカ森林へ向かう
-
-【ロラッカ森林】
-ノワリーと会話し中に入る許可を貰う
-<span class="aka">オオシシはEXで対処</span>
-**メイジ**
-　``INTボーナス０→１``
-　``フリーズ３→５``
->**vs始まりの翼竜**　LIFE560
-　全員EXフリーズ連打
-※レベル6になっていれば、INTボーナス1、トラベルハットの状態でEXフリーズ5を打つと約100出る。この状態を2人+INTボーナスを振っていない1人で約80となりちょうど2ターンキルできる計算になっています。
-
-【カザン】
-**ナイト**
-　``騎士道マスタリー　０→８``
-　``騎士の憤怒　０→１``
-　<span class="ao">サバイバルベルト・旅人のお守り</span> → ナイト
-ギルドオフィスへ向かい、エランと会話するとイベント開始。
-
-
-
-### 真オープニング
-■イベント休憩　4:20程■
-<span class="aka">ロゴが表示されたらAボタンを押さないと進行しないので注意</span>
-【ミロス】
-イベント後王宮を時計回りに回る
-カリユ・武器屋・微笑む・クロウと会話
-クロウ近くの壺（下）から<span class="ao">マナ水</span>
-
-
-隊列で<span class="aka">ナイト後衛プリンセス前衛にする</span>
-道具屋北の倉庫で整理する男から<span class="ao">竹笛</span>を貰う
-道具屋と武器屋に寄ってフィールドへ
-　道具屋：<span class="ao">パロの実</span>　15個
-　武器屋：<span class="ao">ブロードソード</span>→ナイト
-　　　　　<span class="ao">スケイルアーマー</span>→装備させない
-
-【フィールド】EX使用OK
-プリンセスを3人とも落とし、<span class="aka">LIFEの管理をしながらロラッカ森林周辺のフロワロを潰してまわる。</span>
-ナイトのレベルを10まで上げる。
-稼ぎが終わったらミロスに戻る
->とにかく無理は禁物。襲い掛かられて麻痺や眠りを食らったら命はないと思ってください。慣れないうちはミロスを出る前にセーブをしましょう。
-
-【ミロス】
-宿屋で一泊セーブ後ロラッカ森林へ
-
-【ロラッカ森林】EX極力使わない
-２マップ目に入る前にスキルを振る
-**ナイト**
-　`騎士の憤怒　1→5`
-１･２･４体目のサーペンタスに当たって通常憤怒で倒す
-乱数次第で落ちないので<span class="aka">247以下</span>なら再度憤怒、<span class="aka">258以上</span>なら通常攻撃で倒す
-<span class="ao">シルクウィップ</span>が落ちたかどうかは要チェック
-
-【ロラッカ山洞】EX極力使わない
-グリフィナスを使いエンカリセしながら進む
-１体目のグリフィナスに当たった後竹笛使用
-２マップ目右上、サバイバルベルト近くで外側を回っているグリフィナスを倒す。300以上入れば2ターン目は通常攻撃でOK。
-宝箱から<span class="ao">サバイバルベルト</span>を回収
->**vsトリケロス**　LIFE580
-通常憤怒3発で倒しにいくが、１･２発目の乱数が悪ければ3ターン目にEX使用。
-
-撃破後、王者の剣キャンプにて準備を行う
-　(あれば)<span class="ao">シルクウィップ</span>　 → プリンセス
-　<span class="ao">スケイルアーマー</span> → プリンセス
-　<span class="ao">サバイバルベルト</span> → プリンセス
-ユーリィと会話して回復
-　万屋ゲンちゃん：<span class="ao">パロの実</span>　15個
-<span class="aka">並び替えを行い、ナイト・生存プリンセスを後衛、死体プリンセスを前衛に出す</span>
-**ナイト**
-　``クレンチング　０→●``
-**プリンセス**
-　``INTボーナス　０→１``
-　``キュア　０→３``
-カザンに向かう
-
-【フィールド】
-道中で死体Pを落とし、その戦闘中に隊列変更でナイト前衛、プリンセス後衛、死体前衛にする
-
-【ポータル・セス】
-慣れないうちはセーブしよう。
-
-【カザン共和国】危険なエンカはEX使用
-１マップ目は通常エンカしないので、ドラゴハンマードの動きに注意すればよい
-2マップ目、2～4体目のドラゴハンマードのうち2体倒す。憤怒2回でちょうど倒せるが、頭突きで麻痺する可能性があるためプリンセスはキュアを入れる。
-ドラゴハンマードを2体倒せていればプリンセスのレベルが3にはなっているはずなので、最終マップの泉手前でスキル振り行い、回復を行う。
-**プリンセス**
-　``キュア　３→５``
-宝箱から<span class="ao">パロメディス</span>を回収し手負いの竜王戦
->**vs手負いの竜王**　LIFE1300
-プリンセスは毎ターンナイトにキュアをかける。キュアのレベルが5であれば全回復できるはず。
-プリンセス自身が殴られても放置でよいが、生き抜けるなら生き抜きたい。
-<span class="aka">通常憤怒が約200、EXが3発残っていれば通常2回EX3回でちょうど倒せる計算</span>。ダメージ計算がものをいいます。
-
-【カザン】
-メナスのところに向かう
-道具屋に寄って買い物をする
-　道具屋：<span class="ao">パロの実</span>　20個
-　　　　　<span class="ao">竹笛</span>　10個
-　　　　　<span class="ao">シフター</span>　1個
-宿屋で一泊しポータル・セスへ向かう
-【ポータル・セス】
-ポータルを起動する。プリンセスのレベルが5以上ならスキル上げし、セーブ。
-**プリンセス**
-　`フィアーマスタリー　1`
-　`絶叫金切り　1`
-
-【フィールド】
-ちゃんとレベルが上がってれば、ほとんど1逃げ出来るはず。逃げられなかったらどんまい。
-
-【トドワ山岳】EX使用してOK
-ドラゴンでエンカリセをしながら進んでいく（竹笛は使用しない）
-１マップ目のトリケロスエリアで宝箱から<span class="ao">スチールブレスト</span>回収
-　<span class="ao">スチールブレスト</span> → ナイト
->ムジナ2シャドウ2、アサナキ2ムジナ1といった睡眠や混乱を持ったエンカがあるので、ここでナイトのEXを使いましょう。それ以外のエンカではEX金切りがうまく働いてくれます。
-
-【サイモン】
-<span class="aka">装備を変更</span>
-　<span class="ao">旅人のお守り</span> → プリンセス
-　<span class="ao">サバイバルベルト</span> → ナイト
-宿屋で回復してセーブ。ゴウガ竹林へ
-
-【ゴウガ竹林】危険なエンカはEX使用
-**●竹笛目安**
-1.フィールドに出た瞬間
-2.1マップ目右の縦通路を抜けて少し歩いた後
-3.1マップ目プテラノザウラス区間を抜けた後
-4.2マップ目左エリアに入った後
-5.3マップ目で白銀水を回収するとき
-6.マナ水を回収するとき
-
->本ゲームのなかでもトップクラスに難しいダンジョンです。まずは何よりフライドラゴニカ(通称トンボ)の動きに注意。
-EXの使い方ですが、
-<span class="aka">・グリンヘルムのいるエンカでは金切り
-・デスフラワーのいるエンカでは憤怒</span>
-はマストです。グリンヘルムが守ってしまうと、死体が2体ではEX憤怒で倒し切れません。また、デスフラワーは技不能を使います。技が不能になります。
-ナガモノ2ラウンドホーン2、アイススライム2ナガモノ1は比較的安全なエンカのため、EXの残数によっては通常憤怒もあり。
-
-
-
-
-
-３マップ目南通路左の宝箱から<span class="ao">白銀水</span>
-余裕があれば北西の宝箱から<span class="ao">マナ水</span>
-泉で回復を行う
-オルグドラゴニスでエンカリセしてアイゼンに向かう
-
-【フィールド】
->アイゼンに着くまでがゴウガ竹林です。泉でLIFEとMANAは回復できていても、EXは枯渇しているはず。一歩間違えるとサイモンに戻されます。
-
-【アイゼン】
-美食家の家に裏口から入り、樽から<span class="ao">レグエレム</span>
-ソウゲンに会いに行き話を聞く。「いいえ」のほうが若干速い。
-王室左の隠し部屋の壺（右）から<span class="ao">ヴォルカのグラフ</span>
-1マップ戻り、すぐ左の部屋から２階に登る
-壺（上）から<span class="ao">ルビリア</span>、左上の引き出しから<span class="ao">レグヒータ</span>回収
-クエストオフィス左上の壺から<span class="ao">ヒールエアロ</span>
-<span class="aka">並び替えを行いナイトを後衛、プリンセスを前衛に</span>
-宿屋に一泊してセーブし、ヒヨロン神水洞へ
-
-【ヒヨロン神水洞】危険なエンカはEX使用
-<span class="aka">いいところでプリンセスを落とす</span>
-入ってすぐにスキル振りを行う
-**ナイト**
-　`騎士道マスタリ　8→10`
-アイゼン兵士と会話するとリッケンとのイベント、ミッション<span class="ora">「デッドブラック討伐」</span>受理。
-B1北西の部屋で回っているドラゴンたちは、メニューバッファを使うと背後がとりやすい。
-そのまま竹笛を使いつつエンカリセしつつB2北東からB1へ
-宝箱から<span class="ao">将剣</span>→ナイト
->将剣を手に入れた時点でフェアリドラグを1発、エンシェンタスを2発で倒せるようになります。防御したグリンヘルムも1発。
-
-泉で回復する際、回復前に衝突されないように<span class="aka">並び替えでメンバーを集合</span>。
-泉を中心に全体を回りながらドラゴンを狩っていく
-北西の部屋で<span class="ao">マナ水</span>、南西の部屋で<span class="ao">パロメディス</span>回収
-B2に居るドラゴンを全て倒して回るとだいたいLv26になるはず。
-Lv26にならなければ適当に雑魚を倒してレベルを上げる
-泉で回復後<span class="aka">スキルを振って</span>ボス戦
-**ナイト**
-　`POWボーナス　1`
-　`INTボーナス　3`
-　``ウォークセーフ０→５``
->**vsデッドブラック**　LIFE3200
-完全なる闇は最大LIFEの60％以下になっていると即死する。回復が間に合う限りはボーナスターンになる。
-道具使用は確実に先制が取れると思っていいので、回復ライン85を厳守する。
-結果、睡夢の刃を食らわないことを祈る時間。
-
-撃破後洞窟を出てシフターを使用しカザンへ
-
-
-### 世界協定
-【カザン】
-宿屋で一泊、セーブは不要
-マップ中央に行くとペンネイベントが起こるので連打でスルー
-クエストオフィスでミッションを報告
-メナスと2回会話しプレロマへ向かう
-
-【プレロマ】
-頂上への道中、右塔4階の左の部屋中央の本棚から <span class="ao">レグショッカ</span>
-頂上でイベント後、話を聞くために1階受付嬢のところへ。<span class="ora">「ファロを探せ！」</span>発生。
-クエストを受理して追いかけっこを始める
->2F→3F→右4F→右5F→6F→左5F→左4F
-→左5F→6F→右5F→右4F→3F→物置
-
-物置の奥にある壺から<span class="ao">800G</span>、その奥の宝箱から<span class="ao">フィジカルガード</span>回収
-少し戻って物置内左上に積み上げられた本から<span class="ao">レグヒータ</span>回収
-外へ出て竹笛を使用し、ポータルフェルへ向かう
-
-【ポータルフェル】
-ポータルを起動しセーブ。港町ゼザへ向かう
-
-
-【フィールド】基本的に敵はEX憤怒で対応
->このタイミングのみ船の移動が陸上を走るより遅いため、陸上を走りましょう。ゼザで高速操舵を手に入れてからは極力海上を進むほうが速くなります。
-
-【港町ゼザ】
-宿屋で一泊
-道具屋で不要なアイテムを売却しアイテム購入
-　道具屋：<span class="ao">竹笛</span>　8個
-　　　　　<span class="ao">シフター</span>　4個
-道具屋裏の樽から<span class="ao">821G</span>
-北西の建物２階の宝箱から<span class="ao">ミルロメディス</span>と<span class="ao">レグエレム</span>
-操舵屋下の壺から<span class="ao">マナ水</span>
-操舵屋で<span class="ao">高速操舵</span>と<span class="ao">南海操舵</span>を購入
-隣の建物内の壺（上）から<span class="ao">マナ水</span>
-右上の建物内の大壺から<span class="ao">ヒールエアロ</span>、２階の壺（下）から<span class="ao">394G</span>
-外へ出て、竹笛とウォークセーフを使ってマレアイアに向かう
-
-【フィールド】EXで対応
-
-【マレアイア】
-右の離れ小島にある民家右の壺から<span class="ao">1000G</span>
-<span class="aka">王城に行ってミッションを発生させる</span>
-王室右の隠し部屋にある<span class="ao">ロナムネックレス</span>を回収
-装備変更を行う。<span class="aka">装備欄一番下のサバイバルベルト</span>をロナムネックレスにする
-　<span class="ao">ロナムネックレス</span>→ ナイト
-　<span class="ao">サバイバルベルト</span> → プリンセス
-１マップ戻り下り階段から地下へ
-上の壺から<span class="ao">900G</span>、右の袋から<span class="ao">ロナムフルート</span>回収
-南西武器屋上の樽（下）から<span class="ao">パロメディス</span>を回収
-武器屋で不要なものを売り払い買い物
-　武器屋：<span class="ao">エストック</span><span class="aka">（装備させない）</span>
-宿屋でプリンセスを蘇生
-一泊して外へ出てシフター使用
-
-【ポータル・フェル】
-セーブして外へ
-
-【フィールド】
-**●竹笛・ウォークセーフ目安**
-1.外に出た瞬間
-2.内海のフロワロエリア終盤あたり
-3.上陸して砂漠地帯に入ったら
-4.帝国領監視キャンプを出たら
-
-海上では、フロワロのダメージを重ねていない限り危険な戦闘はそこまでない。憤怒防御でOK。
-砂漠地帯で上陸、ポータル・レーへ向かう。
-<span class="aka">マンダラファンとサンドトラップが石化、誘惑を持っているためEX憤怒</span>
-マナが無くなってきたらプリンセスがマナ水使用
-
-【ポータル・レー】　
-起動して帝国領監視キャンプへ向かう
-
-【帝国領監視キャンプ】
-入って西の壺から<span class="ao">パロメディス</span>
-東の壺から<span class="ao">マナ水</span>、北東の壺から<span class="ao">500G</span>
-宿屋1階壺(右)から<span class="ao">ブリザドのグラフ</span>、地下1階壺(下)から<span class="ao">ヒュプノ結晶</span>
-<span class="aka">プリンセスが死んでいれば蘇生</span>
-必要に応じて一泊、ネバンプレスへ
-
-【ネバンプレス】
-王様に話を聞きに行く
-城内を時計回りに回りアイテムを回収していく
->南西の部屋下の壺から<span class="ao">ルビリア</span>
-北西の部屋の大壺から<span class="ao">ミルロメディス</span>
-北から地下に行き、階段上の引き出しから<span class="ao">トパジス</span>、真ん中上の引き出しから<span class="ao">サフィオ</span>、左下壺から<span class="ao">ヒュプノ結晶</span>
-南東の部屋奥の樽から<span class="ao">567G</span>
-
-街へ戻り、反時計回りに回りつつアイテム回収
-宿屋で一泊する
->酒場内右の壺から<span class="ao">マナ水</span>
-北東の建物に裏口から入り、宝箱から<span class="ao">ミルロメディス</span>
-クエストオフィス内の壺から<span class="ao">サフィオ</span>
-城入口左下の壺から<span class="ao">ヒュプノ結晶</span>
-
-武器屋に立ち寄り装備購入
-　武器屋：<span class="ao">タフネスメダル</span> → ナイト
-　　　　　<span class="ao">タフネスメダル</span> → プリンセス
-道具屋右の壺（一番下）から<span class="ao">791G</span>
-外へ出てシフター使用
-
-【ポータル・レー】
-セーブして外へ
-
-【フィールド】
-できればプリンセスのLIFEを減らす。竹笛のみ使用してフロワロでダメージを稼ぐとよいかも。
-
-【デ＝ヴォ砂漠】
-<span class="aka">フレイムイーター戦までにプリンセスのレベルを17以上にする</span>
-1体目のウルフェドラゴでエンカリセ
-<span class="aka">エンカリセ後ロナムフルートを使用</span>
-2、3体目のウルフェドラゴで再度エンカリセし、フレイムイーター前へ
-フレイムイーター戦前に装備などを整える
-<span class="aka">ナイトを後衛、プリンセスを前衛に変更</span>
-**ナイト**
-　``POWボーナス 2``
-**プリンセス**
-　``ノーブルマスタリ　1``
-　``灼熱の韻　10``
-　`堅牢の韻　1`　
-　<span class="ao">エストック</span> → ナイト
-　<span class="ao">タフネスメダル</span> → ナイト（ロナムネックレス外す）
-<span class="aka">★旧チャートでは圧倒的な運ゲーでしたが、20220531現在の調査の限り、正しい戦闘前の準備と行動で襲い掛かられなければまず間違いなく勝てます。くれぐれもミスのないように。</span>
->**vsフレイムイーター**　LIFE3000
-<span class="aka">灼熱の韻Lv10を付与、姫が3人死亡状態で、EX憤怒が1500以上のダメージになるため、2回の攻撃で片づける戦略</span>
-①襲い掛かられず一番攻撃を受けるパターン
-1 ナイト：レグヒータ→自分 プリ：EX灼熱の韻 火喰：フレイムヴェイル
-2 ナイト：パロメディス→自分 プリ：EX堅牢の韻 火喰：攻撃
-※ナイト後衛プリンセス前衛なので、プリンセスのLIFEが削れていればだいたいプリンセスが死亡
-3 ナイト：EX憤怒 火喰：ロックキャノン
-4 ナイト：EXパロメディス 火喰：ロックキャノン
-5 ナイト：EX憤怒
-②
-1 ナイト：レグヒータ→自分 プリ：EX灼熱の韻 火喰：フレイムヴェイル
-2 ナイト：パロメディス→自分 プリ：EX堅牢の韻 火喰：攻撃　姫死亡
-3 ナイト：EX憤怒 火喰：フレイムボールorファイアブレス
-4 ナイト：EX憤怒
-③初ターンにフレイムヴェイルをしないパターン
-1 ナイト：レグヒータ→自分 プリ：EX灼熱の韻 火喰：攻撃で姫が死ぬ
-2 ナイト：EX憤怒 火喰：フレイムヴェイルor攻撃
-3 ナイト：EX憤怒
-
->※ちなみに…
-・レグヒータ、堅牢の韻Lv1を付与し、スチールブレストを装備した前衛ナイトが受けるダメージ乱数は、ロックキャノンは最大129、フレイムヴェイルの反射が最大30
-・ナイトLv29がエストック、スチールブレスト、  タフネスメダル2個を装備するとLIFEが163
-⇒1ターンに受ける最大ダメージより最大LIFEが高いため、確実に1ターン耐えられる！
-
-
-
-
-
-### 帝竜討伐
-【ネバンプレス】
-ナイト前衛、プリンセス後衛に並び替え
-装備変更をする
-　<span class="ao">ロナムネックレス</span> → ナイト（タフネスメダル外す）
-　<span class="ao">タフネスメダル</span> → プリンセス
-外へ出てシフター使用後、<span class="aka">セスからカザンへ</span>
-
-【カザン】
-オフィスでミッションを報告
-メナスのところへ
-自動でプレロマの会議室へ
-
-【プレロマ】
-会議が終わったら外へ出てゼザへ
-
-【ゼザ】
-道具屋：<span class="ao">シフター</span>→2個
-　　　　<span class="ao">竹笛</span>→ 4個
-操舵屋で<span class="ao">北海操舵</span>購入
-外へ出てシフター使用後、武村ハイレインへ
-
-【フィールド】EX使用OK、なるべく北海に入らないように
-　<span class="aka">船に乗ったら竹笛、ウォークセーフ</span>
-途中、ポータル・スムを起動
-
-【ハイレイン】
-道具屋外の左側の雪だるまから<span class="ao">サフィオ</span>
-北東の民家の外の壺(左)から<span class="ao">ソルマネル</span>、その家の中の壺から<span class="ao">レグエレム</span>
-ゼスと会話してヒューロ氷洞に入る許可を得る
-宿屋で一泊してセーブ
-南西の民家内右の壺から<span class="ao">パロメディス</span>
-武器屋で不要なものを売却後、アイテム購入
-　武器屋：アイテム売却し装備を購入
-　　　　　<span class="ao">古兵の指輪</span> → ナイト
-　　　　　<span class="ao">古兵の指輪</span> → 装備させない
-　道具屋：<span class="ao">エクスポータ</span>　2個
-外へ出てヒューロ氷洞へ
-
-【ヒューロ氷洞】危険なエンカはEX使用
-**●竹笛、ウォークセーフ目安**
-1.フィールドに出た時
-2.始式砲刃駆装備時
-
-左→下→左→上→右→上→右→下→一番下から左→下→左で宝箱から<span class="ao">始式砲刃駆</span>を回収
-　<span class="ao">始式砲刃駆</span>→ナイト
-　<span class="ao">スチールブレスト</span>→プリンセス
-左下方向へ進み<span class="ao">ダークエッジ</span>回収し装備
-　<span class="ao">ダークエッジ</span>→ ナイト
-　<span class="ao">古兵の指輪</span> → ナイト（ロナムネックレス外す）
-エクスポータで脱出
-
-【フィールド】危険なエンカはEX使用
-シフターを使いスムからレーに移動
-<span class="aka">帝国領キャンプより西に出たくらいで竹笛ウォークセーフ</span>
-レーから西へ向かいニギリオの宿へ
-【ニギリオの宿】
-ジェンジェン爺と会話してミッションを発生させる
-外へ出てポータル・ゴフからセスへ
-
-【カザン】
-ミッションオフィスで、<span class="ora">『謎の帝竜』『インビジブル』『フレイムイーター』</span>を受理
-　道具屋：<span class="ao">竹笛</span>　20個
-宿屋で一泊してセーブ、ロラッカ山洞へ
-
-【ロラッカ山洞】
-<span class="ao">ソルマネル</span>を回収しノザンペスタ側へ抜ける
-
-【ノザンペスタ】
-**●竹笛、ウォークセーフ目安**
-1.ロラッカ山洞を抜けた時
-2.1個目のスイッチを操作した時（竹笛だけ）
-3.1個目の階段を降りた時（竹笛だけ）
-4.2個目の階段を降りた時（竹笛だけ）
-
-機械を操作し扉を開けて、一旦外へ
-ドラゴンの視線が逸れたタイミングで中へ入る
->迷路フロア
-最初の部屋でスイッチ操作
-下右右　スイッチ操作
-下下左左左
-で抜ける
-
-泉で回復してスキルを振る
-**プリンセス**
-　``INTボーナス　1→5``
-　``キュアⅡ　5``
-背後を取って対竜兵器PZ戦
->**vs対竜兵器PZ　LIFE3200
-1 ナイト→憤怒　プリ→灼熱の韻
-2 ナイト→防御　プリ→防御
-3 ナイト→憤怒　プリ→キュアⅡ（ナイト）
-4 ナイト→憤怒　プリ→防御
-
-戦闘後、プリンセスが死んでいたらヒュプノ結晶で蘇生
-エクスポータ→シフター→フェル→スタリ小遺跡
-【スタリ小遺跡】
-ファロと会話し、ポータルフェルへ戻る
-【ポータル・フェル】
-<span class="aka">プリンセスを前衛に並び替え</span>
-プレロマ研究員と会話して回復後、セーブしてインビジブル戦
->**vsインビジブル**　LIFE6000
-1 ナイト→憤怒　　 プリ→EX灼熱の韻
-2以降 ナイト→EX憤怒　プリ→キュアⅡ（ナイト）
-
-並び順を元に戻す
-体力を回復する
-
-【フィールド】
-フェル→レー→帝国領バ＝ホ
-<span class="aka">フィールドに出たら竹笛ウォークセーフ</span>
-
-【帝国領バ＝ホ】
-ジェッケと会話してドラゴン探知機を受け取る
-
-【フィールド】
-**●竹笛、ウォークセーフ目安**
-1.フィールドに出た時
-2.１個目を設置して折り返し少し歩いた後
-3.２個目を設置した後
-4.３個目を設置した後
-
-探知機１個目　ジョマロン山岳から　　西１北７
-![tanchiki_Jomalon](https://user-images.githubusercontent.com/85177079/174697734-12af78f3-28af-4150-8e44-8137defb8fd3.png)
-探知機２個目　ヨーバー大滑砂出口から西５南２
-![tanchiki_Yober](https://user-images.githubusercontent.com/85177079/174697764-31e017cc-a9e2-4f46-8a88-c0e3d4146dea.png)
-探知機３個目　ゴ＝ファ砂漠から　　　東６南４
-![tanchiki_Gofa](https://user-images.githubusercontent.com/85177079/174697532-d77ac329-356c-40fb-80cc-0c030bffeaa8.png)
-MANAが足りなくなったらマナ水を使ってよい
-設置し終わったらバ＝ホに戻る
-
-【帝国領バ=ホ】
-ジェッケと会話するとイベント発生、自動でネバンプレスへ移動
-
-【ネバンプレス】
-　道具屋：<span class="ao">シフター</span>　８個
-　　　　　<span class="ao">エクスポータ</span>　２個
-プリンセスが死んでいれば蘇生
-宿屋で一泊
-シフターを使いレーへ
-
-【ポータル・レー】
-セーブしてジョマロン山岳へ
-
-【ジョマロン山岳】
-**●竹笛、ウォークセーフ目安**
-1.フィールドに出た時
-2.１マップ目の階段を上りきった後
-3.２マップ目の１個目の階段を登った時
-4.３マップ目の階段を上りきった後
-5.４マップ目北西
-
-ジェッケと会話し足止めをお願いする
-<span class="aka">ロストは誘惑持ちなのでEXで対処</span>
-MANAはある程度余裕を持たせておく。スキルを上げてセーブ
-**プリンセス**
-　`堅牢の韻　1→●`
->**vsジ・アース**　LIFE9000
-1 ナイト→防御、プリ→堅牢の韻
-2 ナイト→憤怒、プリ→灼熱の韻
-柔軟に対応　ナイトのLIFEが半分を下回ったら生き残ることを最優先に
-
-【ネバンプレス】
-宿屋でプリンセスを蘇生し一泊
-シフターを使いレー→ゴフ→ニギリオの宿
-
-【ニギリオの宿】
-ジェンジェン爺と会話し火山に入る許可を得る
-<span class="aka">宿屋で泊まらずセーブだけして</span>火山へ
-<span class="aka">フィールドに出たら竹笛ウォークセーフ</span>
-
-【ドーマ火山】
-**ナイト**
-　``POWボーナス　●→５``
-　``ガードマスタリー　０→５``
-　``防御体術　０→●``
-**プリンセス**
-　`堅牢の韻　●→●`
-泉で回復してフレイムイーター戦
-
->**vsフレイムイーター**　LIFE6000
-1 ナイト：レグヒータ→自分
-　プリ：堅牢の韻
-2 ナイト：防御
-　プリンセス：EX灼熱の韻
-3以降　EX憤怒、EXキュアⅡ
-レグヒータで1戦目よりさらに楽な戦闘になる
-<span class="aka">自動回復300</span>があるので、体制が整うまでは攻撃しないほうがよい
-
-
-体力を回復してエクスポータ、ニギリオの宿へ
-
-【ニギリオの宿】
-ジェンジェン爺と会話する。<span class="aka">粘らない。</span>
-外へ出てシフターを使いゴフ→セス→カザンへ
-
-【カザン】
-<span class="aka">ミッションオフィスでミッション３つを報告</span>
-プリンセスを蘇生し、宿屋で一泊後セーブ。フィールドへ。
-フィールドでイベント発生
-
-### 千人砲
-【イベント区間】
-プレロマに自動で移動する
-会議室で会議後、シフターを使いセス→カザン
-カザンでメナスと会話し、セス→フェル→プレロマ
-プレロマ倉庫地下でエメルと会話
-フェルからセスへ飛び、南のゴロランの館へ
-ゴロランの館２階でアイテルと会話し、北西の禁忌の扉からトゥキオンへ
-
-【フィールド】～【マスカミ遺地】
-**●竹笛、ウォークセーフ目安**
-1.ゴロランの館を出た時
-2.トゥキオンのフィールドに出た時（竹笛だけ）
-3.寺の中に入った時（竹笛だけ）
-
-アイテルとの会話はすべて「はい」
-右上右右下左上右左上
-回復しセーブしてタケハヤ戦
-
->**vs人類戦士タケハヤ**　LIFE15000
-1 ナイト→憤怒　　 プリ→EX灼熱の韻
-2 ナイト→EX憤怒　プリ→EX回復（ナイト）
-3 ナイト→EX憤怒　プリ→EX回復（ナイト）
-4 ナイト→EX憤怒
-半竜の目覚めを使われると物理ダメージが減るので、速攻をかけるほうが無難
-
-エクスポータ→シフターでセス→フィールドへ
-フィールドに出ると自動でプレロマへ移動する
-
-【プレロマ】
-外へ出てシフターを使いセス→カザン
-
-【カザン】
-大統領府でメナスと会話
-　道具屋：<span class="ao">ロナムフルート</span>　18個
-　　　　　<span class="ao">パロメディス</span>　数個
-　　　　　<span class="ao">マナ水</span>　数個
-外に出てセス→フェル→プレロマ
-
-【プレロマ】
-最上階でノワリーと会話
-プリンセスを蘇生し、宿屋で一泊
-外へ出てフェル→セスへ
-
-【ポータル・セス】
-飛行船を呼んでセーブ
-飛行船で新バロリオン大森林へ
-
-【新バロリオン大森林】
-**●竹笛、ウォークセーフ目安**
-1.新バロリオン大森林に入った時
-2.死骸イベントを見た後
-3.１体目のヘイズシールドの後ろを通る時
-4.２体目のヘイズシールドの後ろを通る時
-5.４マップ目に入った時
-6.４マップ目２体目のヘイズシールドを避けた時
-7.キャリバーン回収後
-
-２マップ目南西で<span class="ao">ノーブルチュニカ</span> → プリンセス
-３マップ目北西で<span class="ao">白銀水</span>
-道中でマナが減ってきたら様子を見て回復する
-４マップ目北東で石碑を、右から３回左から２回調べる
-隠し部屋で<span class="ao">キャリバーン</span>→ ナイト
-**ナイト**
-　``防御体術　●→●``
-**プリンセス**
-　``堅牢の韻　●→●``
-ボス前で回復してセーブ
-
->**vs神体ヘイズ**　LIFE10000
-1 ナイト→憤怒　プリ：灼熱の韻
-2 ナイト→憤怒　プリ：EX堅牢の韻
-3以降　各自敵の行動に対応して攻撃回復
-
-外へ出てシフターでセス→カザン
-
-### 未来へのきざはし
-【カザン】
-屋２階のくつろぐルシェから<span class="ao">各種アイテム</span>を貰う
-大統領府でメナスと会話しミッション<span class="ora">『未来へのきざはし』</span>受理
-ジョニーからコンキスタアクスもらう
-道具屋で不用品を売却しアイテム買い込み
-　道具屋：<span class="ao">ソルマネル</span>　　８個
-　　　　　<span class="ao">ポワゾル</span>　５個
-　　　　　<span class="ao">ヒュプノ結晶</span>　３個
-　　　　　<span class="ao">マナ水</span>　15個
-　　　　　残ったお金で回復アイテム購入
-外へ出てセス→スム
-
-【ポータル・スム】
-飛空艇を呼ぶ
-飛空艇でハイレインへ
-
-【武村ハイレイン】
-プリンセスを蘇生して宿屋で一泊、セーブ
-飛空艇で北極へ
-
-
->**vsトリカラード**　LIFE7000
-1 ナイト→憤怒　プリ→防御
-2以降 意地で倒す(後々更新します…)
-
-【紅杭の塔】
-**●竹笛、ウォークセーフ目安**
-1.塔の中に入った時
-2.２マップ目北西
-3.中継の次のエリアに入った時
-4.泉手前
-5.白銀水を回収した時
-6.３体目のドラゴメガマウνを倒した時
-7.中継から２マップ目北東
-8.中継から２マップ目に入った時
-9.泉手前
-10.中継から２マップ目中間あたり
-
-<span class="aka">それぞれのドラゴンの動きを把握すること！</span>
-
-マップ2
-左上でウルフェの視界に入らないように移動
-マップ3
-左回りでドラゴン回転中。フェアリの通過待ち。
-マップ4
-最速で移動できると右下のウルフェに見つからないはず。ワイバーンνを倒すと階段が出現する。<br>
-マップ6
-<span class="aka">階段を登ったら一瞬入力をニュートラルに。ストナタとグリフィナスの後ろをついていく。下の位置で待機、2体通過したら即ついていくとギリギリ戦わずに済む。</span>
-![kurenai_stgr](https://user-images.githubusercontent.com/85177079/174701888-ae258a4f-60d5-420c-a930-c9e7f90b2133.png)
-マップ7
-ストグリ1の通過を見送り、柱を大回りすると2組目が通り過ぎる。宝箱から<span class="ao">ミルロメディス</span>。3組目はうまく撒く。
-マップ8
-左から２番目を倒すと階段が出現する。フロワログラスとエンカして乱入させる。
-マップ9
-泉で回復してセーブ<br>
-マップ10
-階段を登ったら一瞬入力をニュートラルに。
-マップ11
-少し大回りし<span class="ao">白銀水</span>。
-マップ12
-ドラゴメガマウνを3匹全て倒すと階段が出現する<br>
-マップ14・15
-かなり複雑な動きなので、動画を参照してください
-マップ16
-ドラゴアングリνを４体時計回りに倒す
-その後、12時の部屋でビトラドラゴニスを乱入させ倒し階段を出現させる
-マップ17
-泉で回復してセーブ<br>
-マップ18
-上のルートを進む
-マップ19
-真ん中の列でジルホーン、ドラゴニクレイ(＆タワー)、ロン、ティラノを倒す
-マップ20
-泉で回復して最後のスキル振り、セーブ
-**ナイト**
-　``防御体術　●→●``
-　``POWボーナス　●→●``
-**プリンセス**
-　``堅牢の韻　●→10``
-
->**vsニアラ**　LIFE3000
-バフがかかっていると虚無を使うため、プリンセスは常に灼熱を入れ続ける。充分回復した状態で倒して2戦目の態勢を整える。
-**vs神体ニアラ**　LIFE10000
-●攻撃できるタイミングが限られている。エンヴィーで呪いになっているときとラースのターンは返しのダメージで確実に死亡するので絶対に攻撃してはいけない。百花繚乱は防御しないとそもそも耐えられない。
-・プライドn　単体魔法攻撃
-・エンヴィーn　全体呪い
-・グラトニー2～3　全体斬攻撃
-・スロース1　リジェネ
-・ラースn　直接攻撃壊反撃
-・グリード2～3　炎複数回攻撃
-・ラスト1　強化消去
-・百花繚乱1　花依存攻撃
-灼熱の韻と堅牢の韻を入れてひたすら攻撃と回復
-アイテム使用は基本的に先制できる
-<span class="aka">ラストに回るまで回復し続け、ラストを食らったらナイト防御プリEX灼熱の韻。次のターンのプライドをミルロメディスで全回復して継戦。</span>
-
-
-最後までメッセージ送りを忘れずに
-タイトル画面でタイマーストップ
-<br>
-### スペシャルサンクス
-本チャートは、ポータル・ペタというサイトも運営されているぺたさん(Twitter:@AkMeda)が、長期間かけて完成させたものをアップデートしたものです。
-自分でちまちまチャートを書こうとしていたところにお声がけいただき、元のチャートを快くお譲り頂いた経緯があります。
-この場を借りて深く御礼申し上げます。
-</body>
-</html>
